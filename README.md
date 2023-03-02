@@ -3,7 +3,7 @@
 </h2>
 <center>
 
-## Built With 34
+## Built With
 
 This project was built using these technologies.
 
