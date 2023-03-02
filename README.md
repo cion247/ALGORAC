@@ -3,7 +3,7 @@
 </h2>
 <center>
 
-## Built With us
+## Built With Love
 
 This project was built using these technologies.
 
