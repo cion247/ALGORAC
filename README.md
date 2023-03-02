@@ -3,7 +3,7 @@
 </h2>
 <center>
 
-## Built With hate
+## Built With code
 
 This project was built using these technologies.
 
