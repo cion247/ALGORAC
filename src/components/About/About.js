@@ -15,7 +15,7 @@ function About() {
           <Col md={7} style={{ justifyContent: "center", paddingTop: "30px", paddingBottom: "50px", }}>
 
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Welcome to out Coding Club <strong className="one">I'M</strong>
+              Welcome to our IUT Coding Club <strong className="one">ALGORAC</strong>
             </h1>
             <Aboutcard />
           </Col>

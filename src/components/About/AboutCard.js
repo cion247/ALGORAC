@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+//import { ImPointRight } from "react-icons/im";//
 
 function AboutCard() {
   return (
@@ -8,7 +8,7 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            hello, we are from <span className="one">ICFAI Univercity Tripura</span>
+            Hello there! we're from <span className="one">ICFAI University Tripura</span>
             from <span className="one">Kamalghat, Mohanpur</span>
 
             <br />
@@ -20,9 +20,9 @@ function AboutCard() {
 
 
           <p style={{ color: "rgb(39 141 155)" }}>
-            "bla bla bla"{" "}
+            "I code , therefore I am."{" "}
           </p>
-          <footer className="blockquote-footer">bla bla</footer>
+          <footer className="blockquote-footer">ALGORAC</footer>
         </blockquote>
       </Card.Body>
     </Card>
