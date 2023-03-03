@@ -192,11 +192,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-<<<<<<< Updated upstream
-  background: #247d86;
-=======
   background: #fff;
->>>>>>> Stashed changes
   bottom: 1px;
   left: 0;
   z-index: -1;
