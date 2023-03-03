@@ -72,7 +72,7 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #278d9b  !important;
+  background-color: #428791 !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -93,7 +93,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #278d9b !important;
+  background-color: #2f7983 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -192,7 +192,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #278d9b;
+  background: #247d86;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -426,7 +426,7 @@ button:focus {
   text-align: center !important;
 }
 
-.footer-container-fluid{
+.footer-container-fluid {
   color: #278d9b;
 
 }
@@ -593,7 +593,7 @@ button:focus {
 @media (max-width: 767px) {
   .tech-icons {
     margin: 10px !important;
-    
+
   }
 }
 
