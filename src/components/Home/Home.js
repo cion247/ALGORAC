@@ -21,7 +21,7 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                we are
+                we're
                 <strong className="main-name"> ALGORAC</strong>
               </h1>
 
