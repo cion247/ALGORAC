@@ -82,12 +82,23 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
+<<<<<<< Updated upstream
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Code Resources
+=======
+              <Nav.Link
+                as={Link}
+                to="/codeResources"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> Code Resources
+>>>>>>> Stashed changes
               </Nav.Link>
             </Nav.Item>
 
           </Nav>
+
+          
         </Navbar.Collapse>
       </Container>
     </Navbar>
