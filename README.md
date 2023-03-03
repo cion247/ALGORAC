@@ -1,9 +1,9 @@
 <h2 align="center">
-  Portfolio Website <br/>
+  coding club Website <br/>
 </h2>
 <center>
 
-## Built With us
+## Built With no feelings
 
 This project was built using these technologies.
 

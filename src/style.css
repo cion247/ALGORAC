@@ -1,10 +1,10 @@
 html {
   --section-background-color: linear-gradient(to bottom left,
-      rgba(17, 16, 16, 0.582),
+      #278d9b,
       rgba(12, 8, 24, 0.904));
 
   --image-gradient: linear-gradient(to bottom left,
-      rgba(17, 16, 16, 0.678),
+      #278d9b(17, 16, 16, 0.678),
       rgba(12, 10, 22, 0.863));
 
   --imp-text-color: #278d9b;
@@ -28,7 +28,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
+  background-color: #278d9b;
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -53,7 +53,7 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #278d9b;
 }
 
 /* Handle */
@@ -72,7 +72,7 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: #428791 !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -93,7 +93,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #278d9b !important;
+  background-color: #2f7983 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -192,7 +192,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #278d9b;
+  background: #247d86;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -416,7 +416,7 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: #278d9b;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important;
@@ -424,6 +424,11 @@ button:focus {
 
 .footer-copywright {
   text-align: center !important;
+}
+
+.footer-container-fluid {
+  color: #278d9b;
+
 }
 
 .footer-body {
@@ -477,7 +482,7 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  box-shadow: 0 4px 5px 3px #278d9b !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -488,7 +493,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 4px 5px #fff !important;
 }
 
 .blog-card {
@@ -501,7 +506,7 @@ button:focus {
 
 .blog-card-view {
   background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
+  box-shadow: 0 3px 3px 2px #278d9b !important;
   color: white !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
@@ -519,7 +524,7 @@ button:focus {
 .blog-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
+  box-shadow: 0 3px 3px 5px #fff !important;
 }
 
 .card-img-top {
@@ -575,7 +580,7 @@ button:focus {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 1.7px solid #278d9b !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
@@ -588,13 +593,14 @@ button:focus {
 @media (max-width: 767px) {
   .tech-icons {
     margin: 10px !important;
+
   }
 }
 
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(39, 141, 155, 0.883) !important;
+  border: 2.2px solid rgba(242, 242, 242, 0.883) !important;
 }
 
 .tech-icon-images {
@@ -670,7 +676,7 @@ button:focus {
 .resume .resume-item .resume-title {
   line-height: 18px;
   font-size: 0.9em;
-  background: #5234795d;
+  background: #278d9b;
   padding: 8px 15px;
   display: inline-block;
   font-weight: 600;
