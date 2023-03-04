@@ -8,21 +8,12 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            hello, we are from <span className="one">ICFAI University Tripura</span>
-            from <span className="one">Kamalghat, Mohanpur</span>
+            THE <span className="one"> MEMBERS </span>
 
             <br />
             <br />
-            We are the official ICFAI Coding Club operated by students<br />
-            we look to find new and enthusiastic faces in our clubs <br />
-            we will welcome you with open arms and will help you <br /> with anything you need
+            members portfolio
           </p>
-
-
-          <p style={{ color: "rgb(39 141 155)" }}>
-            "I code , therefore I am."{" "}
-          </p>
-          <footer className="blockquote-footer">ALGORAC</footer>
         </blockquote>
       </Card.Body>
     </Card>
