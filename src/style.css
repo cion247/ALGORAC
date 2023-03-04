@@ -3,9 +3,9 @@ html {
       #278d9b,
       rgba(12, 8, 24, 0.904));
 
-  --image-gradient: linear-gradient(to bottom left,
-      #278d9b(17, 16, 16, 0.678),
-      rgba(12, 10, 22, 0.863));
+  /* --image-gradient: linear-gradient(to bottom left,
+      rgba(17, 16, 16, 0.1),
+      rgba(12, 10, 22, 0.1)); */
 
   --imp-text-color: #278d9b;
 }
