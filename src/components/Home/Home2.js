@@ -15,40 +15,25 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+            <h1 style={{ fontSize: "3.5em" }}>
+            ABOUT <span className="purple"></span> US
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+            <p style={{ color: "rgb(40 142 156)" }}>
+            "Alone we can do so little, together we can do so much."{" "}
+            </p>
+              <strong className="one">ALGORAC</strong> Coding Club is an ingrain part of ICFAI UNIVERSITY TRIPURA(IUT), a private university located at Agartala, Tripura, India.
               <br />
-              <br />I am fluent in classics like
+              <br />ALGORAC is the perfect platform for all techies who are inquisitive and diligent about tackling real life problem with the aid of programming. The club focuses on
               <i>
-                <b className="purple"> C++, Javascript and Python. </b>
-              </i>
+                <b className="purple"> Competitive programming, Web Designing, App Development, </b> 
+              </i> and various other aspects of programming.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              ALGORAC strives to inculcate and foster the culture of programming and to create a healthy programming environment in the campus. It aims to create an environment which proliferate quantity and quality of programmers irrespective of their respective engineering discipline. &nbsp;
+              &nbsp; 
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Deep Learning and Natural Launguage Processing.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple">ALGORAC believes in coding the problems away.</b>
               </i>
             </p>
           </Col>
