@@ -1,12 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
+//import Techstack from "./Techstack";
 import laptopImg from "../../Assets/about.png";
 
 
-function about() {
+function codeResources() {
   return (
     <Container fluid className="CodeResources">
       <Particle />
@@ -17,22 +16,22 @@ function about() {
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
               lorem ipsum frfsfsfsrfsrfr<strong className="one">I'M</strong>
             </h1>
-            <Aboutcard />
+
           </Col>
 
           <Col md={5} className="" >
-            
+
           </Col>
         </Row>
         <h1 className="project-heading">
           rfrdghfh <strong className="purple">Skillset </strong>
         </h1>
 
-        <Techstack />
+        {/* <Techstack /> */}
 
       </Container>
     </Container>
   );
 }
 
-export default Ab
+export default codeResources;
