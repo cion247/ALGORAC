@@ -82,7 +82,20 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
+            
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/codeResources"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> Code Resources
+              </Nav.Link>
+            </Nav.Item>
+
           </Nav>
+
+          
         </Navbar.Collapse>
       </Container>
     </Navbar>
