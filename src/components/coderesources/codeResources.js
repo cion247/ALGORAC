@@ -14,7 +14,7 @@ function codeResources() {
           <Col md={7} style={{ justifyContent: "center", paddingTop: "30px", paddingBottom: "50px", }}>
 
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              lorem ipsum frfsfsfsrfsrfr<strong className="one">I'M</strong>
+              lorem ipsum frfsfsfsrfsrfr<strong className="one"></strong>
             </h1>
 
           </Col>
