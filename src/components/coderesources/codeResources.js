@@ -1,8 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-//import Techstack from "./Techstack";
-import laptopImg from "../../Assets/about.png";
+import Techstack from "./Techstack";
 
 
 function codeResources() {
@@ -15,6 +14,7 @@ function codeResources() {
 
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
               lorem ipsum frfsfsfsrfsrfr<strong className="one"></strong>
+              get ready<strong className="one">I'M</strong>
             </h1>
 
           </Col>
@@ -27,7 +27,7 @@ function codeResources() {
           rfrdghfh <strong className="purple">Skillset </strong>
         </h1>
 
-        {/* <Techstack /> */}
+        <Techstack />
 
       </Container>
     </Container>
