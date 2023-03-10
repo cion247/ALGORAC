@@ -1,40 +1,117 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" xml:space="preserve">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1010 1010" xml:space="preserve">
   
-<!-- <circle fill="none" stroke="#fff" stroke-width="3" cx="55" cy="55" r="50" style="opacity:1"/> -->
-<circle fill="none" stroke="#fff" stroke-width="3" cx="14" cy="55" r="6">
+ <circle fill="none" stroke="#fff" stroke-width="10" cx="505" cy="505" r="50" style="opacity:1"/> 
+
+  
+<circle fill="#fff" stroke="#fff" stroke-width="5" cx="455" cy="505" r="15">
+  
   <animateTransform
       attributeName="transform"
-      dur="0.5s"
+      dur="3s"
       type="rotate"
-      from="0 55 55"
-      to="360 55 55"
+      from="0 505 505"
+      to="360 505 505"
       repeatCount="indefinite" />
 </circle>
-  <circle fill="none" stroke="#fff" stroke-width="3" cx="16" cy="42" r="6">
+<circle fill="#fff" stroke="#fff" stroke-width="5" cx="465" cy="505" r="15">
   <animateTransform
       attributeName="transform"
-      dur="0.5s"
+      dur="3s"
       type="rotate"
-      from="0 55 55"
-      to="360 55 55"
+      from="0 505 505"
+      to="360 505 505"
       repeatCount="indefinite" />
+  
 </circle>
-  <circle fill="none" stroke="#fff" stroke-width="3" cx="22.5" cy="30" r="6">
+  <circle fill="#fff" stroke="#fff" stroke-width="5" cx="475" cy="505" r="15">
+  
   <animateTransform
       attributeName="transform"
-      dur="0.5s"
+      dur="3s"
       type="rotate"
-      from="0 55 55"
-      to="360 55 55"
+      from="0 505 505"
+      to="360 505 505"
       repeatCount="indefinite" />
 </circle>
-  <circle fill="none" stroke="#fff" stroke-width="3" cx="55" cy="14" r="6">
+<circle fill="#fff" stroke="#fff" stroke-width="5" cx="485" cy="505" r="15">
   <animateTransform
       attributeName="transform"
-      dur="0.5s"
+      dur="3s"
       type="rotate"
-      from="0 55 55"
-      to="360 55 55"
+      from="0 505 505"
+      to="360 505 505"
+      repeatCount="indefinite" />
+  
+</circle>
+<circle fill="#fff" stroke="#fff" stroke-width="5" cx="495" cy="505" r="15">
+  
+  <animateTransform
+      attributeName="transform"
+      dur="3s"
+      type="rotate"
+      from="0 505 505"
+      to="360 505 505"
       repeatCount="indefinite" />
 </circle>
+<circle fill="#fff" stroke="#fff" stroke-width="5" cx="505" cy="505" r="15">
+  <animateTransform
+      attributeName="transform"
+      dur="3s"
+      type="rotate"
+      from="0 505 505"
+      to="360 505 505"
+      repeatCount="indefinite" />
+  
+</circle>
+  <circle fill="#fff" stroke="#fff" stroke-width="5" cx="515" cy="505" r="15">
+  
+  <animateTransform
+      attributeName="transform"
+      dur="3s"
+      type="rotate"
+      from="0 505 505"
+      to="360 505 505"
+      repeatCount="indefinite" />
+</circle>
+<circle fill="#fff" stroke="#fff" stroke-width="5" cx="525" cy="505" r="15">
+  <animateTransform
+      attributeName="transform"
+      dur="3s"
+      type="rotate"
+      from="0 505 505"
+      to="360 505 505"
+      repeatCount="indefinite" />
+  
+</circle>
+  <circle fill="#fff" stroke="#fff" stroke-width="5" cx="535" cy="505" r="15">
+  
+  <animateTransform
+      attributeName="transform"
+      dur="3s"
+      type="rotate"
+      from="0 505 505"
+      to="360 505 505"
+      repeatCount="indefinite" />
+</circle>
+<circle fill="#fff" stroke="#fff" stroke-width="5" cx="545" cy="505" r="15">
+  <animateTransform
+      attributeName="transform"
+      dur="3s"
+      type="rotate"
+      from="0 505 505"
+      to="360 505 505"
+      repeatCount="indefinite" />
+  
+</circle>
+  <circle fill="#fff" stroke="#fff" stroke-width="5" cx="555" cy="505" r="15">
+  
+  <animateTransform
+      attributeName="transform"
+      dur="3s"
+      type="rotate"
+      from="0 505 505"
+      to="360 505 505"
+      repeatCount="indefinite" />
+</circle>
+
 </svg>
