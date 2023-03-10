@@ -41,6 +41,21 @@ function NavBar() {
         <Navbar.Brand href="/" className="d-flex">
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
+
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav defaultActiveKey="#home">
+            <Nav.Item>
+              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+                <h3>ALGORAC</h3>
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
+        </Navbar.Collapse>
+
+
+
+
+
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -82,7 +97,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            
+
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -95,7 +110,7 @@ function NavBar() {
 
           </Nav>
 
-          
+
         </Navbar.Collapse>
       </Container>
     </Navbar>
