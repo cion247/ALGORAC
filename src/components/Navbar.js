@@ -96,7 +96,7 @@ function NavBar() {
                 to="/codeResources"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Learning Resources
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> Learning Sources
               </Nav.Link>
             </Nav.Item>
 

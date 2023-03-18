@@ -210,13 +210,10 @@ button:focus {
 /* --------- */
 .wave {
   animation-name: wave-animation;
-  /* Refers to the name of your @keyframes element below */
   animation-duration: 2.1s;
-  /* Change to speed up or slow down */
   animation-iteration-count: infinite;
-  /* Never stop waving :) */
-  transform-origin: 70% 70%;
-  /* Pivot around the bottom-left palm */
+  transform-origin: 120% 120%;
+  /* Pivot */
   display: inline-block;
 }
 
@@ -285,13 +282,20 @@ button:focus {
 }
 
 .heading {
-  font-size: 2.4em !important;
+  font-size: 2.0em !important;
   padding-left: 50px !important;
 }
 
 .heading-name {
+  font-size: 5.5em !important;
+  padding-left: 50px !important;
+  padding-top: 5px !important;
+}
+
+.heading-bottom {
   font-size: 2.5em !important;
-  padding-left: 45px !important;
+  padding-left: 50px !important;
+  padding-top: 5px !important;
 }
 
 .main-name {
@@ -299,14 +303,14 @@ button:focus {
 }
 
 .Typewriter__wrapper {
-  font-size: 2.2em !important;
-  color: #278d9b !important;
+  font-size: 2.3em !important;
+  color: #fff !important;
   font-weight: 600 !important;
 }
 
 .Typewriter__cursor {
-  font-size: 2.4em !important;
-  color: #278d9b !important;
+  font-size: 2.3em !important;
+  color: #f7f7f7 !important;
 }
 
 @media (max-width: 767px) {
