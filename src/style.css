@@ -74,28 +74,34 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #428791 !important;
+  background-color: #1446573a !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  box-shadow: 0px 10px 10px 0px #072d3a93 !important;
   backdrop-filter: blur(15px) !important;
 }
 
 .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
-  padding: 0.3rem 2rem !important;
+  padding: 0rem 0rem !important;
   font-size: 1.2rem !important;
+}
+
+.navheading {
+  padding-top: 20px !important;
+  color: #fff !important;
 }
 
 .navbar-toggler {
   position: relative !important;
   background-color: transparent !important;
   border-color: transparent !important;
+  color: #fff !important;
 }
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #2f7983 !important;
+  background-color: #fff !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -138,11 +144,33 @@ button:focus {
   opacity: 0.9 !important;
 }
 
+.img-logo {
+  height: 4.4em !important;
+  width: 4.5em !important;
+
+}
+
 @media (max-width: 767px) {
   .navbar {
-    padding: 1rem 2rem !important;
-    font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    padding: 0rem 0rem !important;
+    font-size: .4rem !important;
+    background-color: #134b5a77 !important;
+  }
+
+  .navheading {
+    font-size: 3.0em !important;
+    padding-top: 10px !important;
+    color: #fff !important;
+    display: inline-block;
+    position: relative;
+  }
+
+
+
+  .img-logo {
+    height: 6.4em !important;
+    width: 6.5em !important;
+
   }
 
   .navbar-nav .nav-item a::after {
@@ -152,12 +180,11 @@ button:focus {
 
 .navbar-brand {
   color: rgb(255, 255, 255) !important;
+  font-size: 1.0em !important;
+  display: inline-block;
 }
 
-.logo {
-  height: 2.4em !important;
-  width: 2.5em !important;
-}
+
 
 .navbar-nav .nav-link {
   color: rgb(255, 255, 255) !important;
@@ -177,7 +204,7 @@ button:focus {
 
 .navbar-nav .nav-item {
   position: relative;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .navbar-nav .nav-item a {
@@ -202,7 +229,7 @@ button:focus {
 }
 
 .navbar-nav .nav-item a:hover::after {
-  width: 100%;
+  width: 50%;
 }
 
 /* --------- */
@@ -284,7 +311,10 @@ button:focus {
 .heading {
   font-size: 2.0em !important;
   padding-left: 50px !important;
+  color: #f7f7f7 !important;
 }
+
+
 
 .heading-name {
   font-size: 5.5em !important;
@@ -325,13 +355,13 @@ button:focus {
   }
 }
 
-.myAvtar {
+.UniLogo {
   justify-content: center !important;
   padding-top: 9em !important;
 }
 
 @media (max-width: 767px) {
-  .myAvtar {
+  .UniLogo {
     padding-top: 2em !important;
     padding-bottom: 2em !important;
   }

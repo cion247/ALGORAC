@@ -39,18 +39,20 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          <img src={logo} className="img-logo" alt="logo" />
+          <h1 className="navheading">
+            <strong>ALGORAC</strong>
+
+          </h1>
         </Navbar.Brand>
 
-        <Navbar.Collapse id="responsive-navbar-nav">
+        {/* <Navbar.Collapse id="responsive-navbar-nav">
           <Nav defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <h3>ALGORAC</h3>
-              </Nav.Link>
+              
             </Nav.Item>
           </Nav>
-        </Navbar.Collapse>
+        </Navbar.Collapse> */}
 
 
 
