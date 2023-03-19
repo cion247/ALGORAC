@@ -45,7 +45,6 @@ function NavBar() {
 
           </h1>
         </Navbar.Brand>
-
         {/* <Navbar.Collapse id="responsive-navbar-nav">
           <Nav defaultActiveKey="#home">
             <Nav.Item>
@@ -53,11 +52,6 @@ function NavBar() {
             </Nav.Item>
           </Nav>
         </Navbar.Collapse> */}
-
-
-
-
-
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {

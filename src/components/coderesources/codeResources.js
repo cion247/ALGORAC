@@ -9,23 +9,18 @@ function codeResources() {
     <Container fluid className="CodeResources">
       <Particle />
       <Container>
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
-          <Col md={7} style={{ justifyContent: "center", paddingTop: "30px", paddingBottom: "50px", }}>
+        <Row style={{ justifyContent: "center", padding: "50px" }}> <Col md={5} className="" /></Row>
+        {/*top padding */}
+        <h2 className="project-heading">
+          here are some <strong className="purple">learning resources </strong>
 
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              get ready<strong className="one">I'M</strong>
-            </h1>
+        </h2>
+        <h2 className="project-sub-heading">
+          choose an ideal Road Map and follow it until you reach your <strong>goal</strong>
+        </h2>
 
-          </Col>
-
-          <Col md={5} className="" >
-
-          </Col>
-        </Row>
-        <h1 className="project-heading">
-          rfrdghfh <strong className="purple">Skillset </strong>
-        </h1>
-
+        <Techstack />
+        <Techstack />
         <Techstack />
 
       </Container>
