@@ -295,10 +295,10 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  background-image: var(--image-gradient), url(./Assets/home-bg.svg);
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 30px !important;
+  padding-bottom: 155px !important;
   padding-top: 30px !important;
 }
 
@@ -311,7 +311,7 @@ button:focus {
 .heading {
   font-size: 2.0em !important;
   padding-left: 50px !important;
-  color: #f7f7f7 !important;
+  color: #ffffff !important;
 }
 
 
@@ -328,30 +328,51 @@ button:focus {
   padding-top: 5px !important;
 }
 
+@media (max-width: 767px) {
+  .heading {
+    font-size: 1.3em !important;
+    padding-left: 20px !important;
+
+  }
+
+  .heading-name {
+    font-size: 2.3em !important;
+    padding-left: 20px !important;
+    padding-top: 0 !important;
+  }
+
+  .heading-bottom {
+    font-size: 1.3em !important;
+    padding-left: 20px !important;
+    padding-top: 0px !important;
+  }
+}
+
 .main-name {
   color: #278d9b;
 }
 
 .Typewriter__wrapper {
-  font-size: 2.3em !important;
+  font-size: 1.1em !important;
   color: #fff !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
 }
 
 .Typewriter__cursor {
-  font-size: 2.3em !important;
-  color: #f7f7f7 !important;
+  font-size: 1.2em !important;
+  color: #fff !important;
 }
 
 @media (max-width: 767px) {
   .Typewriter__wrapper {
-    font-size: 1.4em !important;
+    font-size: 1.1em !important;
     font-weight: 500 !important;
-    position: absolute !important;
+
   }
 
   .Typewriter__cursor {
-    display: none !important;
+    font-size: 1.2em !important;
+    color: #f7f7f7fa !important;
   }
 }
 
@@ -362,8 +383,37 @@ button:focus {
 
 @media (max-width: 767px) {
   .UniLogo {
+    height: 10.4em !important;
+    width: 10.5em !important;
     padding-top: 2em !important;
     padding-bottom: 2em !important;
+  }
+
+  .home-logo {
+    height: 15.4em !important;
+    width: 15.5em !important;
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+    margin-left: 30px;
+
+  }
+}
+
+@media (max-width: 990px) {
+  .UniLogo {
+    height: 14.4em !important;
+    width: 14.5em !important;
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+
+  }
+
+  .home-logo {
+    height: 20.4em !important;
+    width: 20.5em !important;
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+
   }
 }
 
@@ -452,10 +502,10 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: #278d9b;
-  bottom: 0 !important;
+  background-color: #14465773;
   padding-top: 10px !important;
   padding-bottom: 8px !important;
+
 }
 
 .footer-copywright {
@@ -463,7 +513,7 @@ button:focus {
 }
 
 .footer-container-fluid {
-  color: #278d9b;
+  color: #144657;
 
 }
 
