@@ -11,10 +11,10 @@ function Footer() {
   return (
     <Container fluid className="footer">
       <Row>
-        <Col md="4" className="footer-copywrigh">
+        <Col md="45" className="footer-copywrigh">
           <h3>Designed and Developed by ALGORAC</h3>
         </Col>
-        <Col md="4" className="footer-body">
+        <Col md="45" className="footer-body">
           <ul className="footer-icons">
             <li className="social-icons">
               <a

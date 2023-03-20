@@ -5,10 +5,9 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+
+
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
@@ -39,23 +38,19 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
-        </Navbar.Brand>
+          <img src={logo} className="img-logo" alt="logo" />
+          <h1 className="navheading">
+            <strong>ALGORAC</strong>
 
-        <Navbar.Collapse id="responsive-navbar-nav">
+          </h1>
+        </Navbar.Brand>
+        {/* <Navbar.Collapse id="responsive-navbar-nav">
           <Nav defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <h3>ALGORAC</h3>
-              </Nav.Link>
+              
             </Nav.Item>
           </Nav>
-        </Navbar.Collapse>
-
-
-
-
-
+        </Navbar.Collapse> */}
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -107,7 +102,7 @@ function NavBar() {
                 to="/codeResources"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Learning Resources
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> Learning Sources
               </Nav.Link>
             </Nav.Item>
 
