@@ -1,17 +1,17 @@
 html {
   --section-background-color: linear-gradient(to bottom left,
       #278d9b,
-      rgba(12, 8, 24, 0.904));
+      #0f0b19d8);
 
   --image-gradient: linear-gradient(to left,
       #278e9b7c,
-      rgb(20, 15, 35));
+      #140f23);
 
 
   --imp-text-color: #278d9b;
 }
 
-.one {
+.cyan {
   color: var(--imp-text-color) !important;
 }
 
@@ -19,18 +19,17 @@ button:focus {
   box-shadow: none !important;
 }
 
-/* --------- */
-/*  Preloader */
-/* --------- */
+
+
+
+/*--------Preloader--------*/
 #preloader {
   position: fixed;
-
   width: 100%;
   height: 100%;
   display: inline-block;
   z-index: 999999;
   background-color: #143243;
-
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -45,34 +44,32 @@ button:focus {
   height: 100vh;
 }
 
-/* --------- */
-/*Scrollbar   */
-/* --------- */
 
+
+
+/*-------Scrollbar--------*/
 ::-webkit-scrollbar {
   width: 7px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-  background: #278d9b;
+  background: #0b3035;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(39, 141, 155, 0.959);
+  background: #509ca7;
   border-radius: 12px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(59, 151, 175, 0.911);
+  background: #278d9b;
   border-radius: 12px;
 }
 
-/* --------- */
-/* Navbar Section  */
-/* --------- */
+
+
+
+/*--------Navbar Section--------*/
 .sticky {
   background-color: #1446573a !important;
   transition: all 0.3s ease-out 0s !important;
@@ -89,8 +86,41 @@ button:focus {
 
 .navheading {
   padding-top: 20px !important;
-  color: #fff !important;
+
 }
+
+.img-logo {
+  height: 4.4em !important;
+  width: 4.5em !important;
+
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    padding: 0rem 0rem !important;
+    font-size: .4rem !important;
+    background-color: #134b5af5 !important;
+  }
+
+  .navheading {
+    font-size: 3.0em !important;
+    padding-top: 10px !important;
+    color: #fff !important;
+    display: inline-block;
+    position: relative;
+  }
+
+  .img-logo {
+    height: 6.4em !important;
+    width: 6.5em !important;
+
+  }
+
+  .navbar-nav .nav-item a::after {
+    display: none !important;
+  }
+}
+
 
 .navbar-toggler {
   position: relative !important;
@@ -144,50 +174,15 @@ button:focus {
   opacity: 0.9 !important;
 }
 
-.img-logo {
-  height: 4.4em !important;
-  width: 4.5em !important;
-
-}
-
-@media (max-width: 767px) {
-  .navbar {
-    padding: 0rem 0rem !important;
-    font-size: .4rem !important;
-    background-color: #134b5a77 !important;
-  }
-
-  .navheading {
-    font-size: 3.0em !important;
-    padding-top: 10px !important;
-    color: #fff !important;
-    display: inline-block;
-    position: relative;
-  }
-
-
-
-  .img-logo {
-    height: 6.4em !important;
-    width: 6.5em !important;
-
-  }
-
-  .navbar-nav .nav-item a::after {
-    display: none !important;
-  }
-}
-
 .navbar-brand {
-  color: rgb(255, 255, 255) !important;
+  color: #fff !important;
   font-size: 1.0em !important;
   display: inline-block;
 }
 
-
-
 .navbar-nav .nav-link {
-  color: rgb(255, 255, 255) !important;
+  color: #fff !important;
+  font-size: 1.0em !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -199,6 +194,13 @@ button:focus {
 @media (max-width: 767px) {
   .nav-link {
     padding: 0.7rem 1rem !important;
+  }
+
+  .navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 3.0em !important;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
   }
 }
 
@@ -232,9 +234,9 @@ button:focus {
   width: 50%;
 }
 
-/* --------- */
-/* Home section */
-/* --------- */
+
+
+/*--------Home section--------*/
 .wave {
   animation-name: wave-animation;
   animation-duration: 2.1s;
@@ -458,7 +460,7 @@ button:focus {
   text-align: center !important;
   font-size: 1.2em !important;
   line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
+  background: #fff !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
 }
@@ -498,9 +500,8 @@ button:focus {
   color: #278d9b !important;
 }
 
-/* --------- */
-/* Footer */
-/* --------- */
+
+/*--------Footer--------*/
 .footer {
   background-color: #14465773;
   padding-top: 10px !important;
@@ -549,9 +550,9 @@ button:focus {
   color: #5c99a1 !important;
 }
 
-/* --------- */
-/* Projects */
-/* --------- */
+
+
+/*--------Projects--------*/
 .project-section {
   position: relative !important;
   padding-top: 150px !important;
@@ -659,12 +660,9 @@ button:focus {
 }
 
 
-/* --------- */
-/* learning resources*/
-/* --------- */
 
 
-
+/*--------learning resources--------*/
 .tech-icons {
   font-size: 4.5em !important;
   margin: 15px !important;

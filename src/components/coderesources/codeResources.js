@@ -12,7 +12,7 @@ function codeResources() {
         <Row style={{ justifyContent: "center", padding: "50px" }}> <Col md={5} className="" /></Row>
         {/*top padding */}
         <h2 className="project-heading">
-          here are some <strong className="purple">learning resources </strong>
+          here are some <strong >learning resources </strong>
 
         </h2>
         <h2 className="project-sub-heading">

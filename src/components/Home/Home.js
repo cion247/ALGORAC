@@ -25,7 +25,7 @@ function Home() {
               </h1>
               <h3 className="heading-bottom">
                 <Type />
-                <strong>the ICFAI University Tripura Coding Club</strong>
+                <strong >the <span className="cyan">ICFAI</span> University Tripura Coding Club</strong>
               </h3>
             </Col>
 
