@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Img from "../../Assets/ICFAIlogo.svg";
+import Img from "../../Assets/logo.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -22,18 +22,18 @@ function Home2() {
               <p style={{ color: "rgb(40 142 156)" }}>
                 "Alone we can do so little, together we can do so much."{" "}
               </p>
-              <strong className="one">ALGORAC</strong> Coding Club is an ingrain part of ICFAI UNIVERSITY TRIPURA(IUT), a private university located at Agartala, Tripura, India.
+              <strong className="one">name</strong> name
               <br />
-              <br />ALGORAC is the perfect platform for all techies who are inquisitive and diligent about tackling real life problem with the aid of programming. The club focuses on
+              <br />name
               <i>
-                <b> Competitive programming, Web Designing, App Development, </b>
-              </i> and various other aspects of programming.
+                <b> name </b>
+              </i> name
               <br />
               <br />
-              ALGORAC strives to inculcate and foster the culture of programming and to create a healthy programming environment in the campus. It aims to create an environment which proliferate quantity and quality of programmers irrespective of their respective engineering discipline. &nbsp;
+              name &nbsp;
               &nbsp;
               <i>
-                <b>ALGORAC believes in coding the problems away.</b>
+                <b>name.</b>
               </i>
             </p>
           </Col>
@@ -47,7 +47,7 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>FIND US ON</h1>
             <p>
-              Feel free to connect with ALGORAC
+              Feel free to connect with name
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">

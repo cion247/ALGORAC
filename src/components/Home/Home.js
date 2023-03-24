@@ -21,11 +21,11 @@ function Home() {
               </h1>
 
               <h1 className="heading-name" >
-                <strong>ALGORAC</strong>
+                <strong>NAME</strong>
               </h1>
               <h3 className="heading-bottom">
                 <Type />
-                <strong >the <span className="cyan">ICFAI</span> University Tripura Coding Club</strong>
+                <strong >the <span className="cyan">name</span> name</strong>
               </h3>
             </Col>
 
