@@ -1,2 +1,0 @@
-# ALGORAC
-coding club website
