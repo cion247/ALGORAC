@@ -5,16 +5,17 @@
         <router-link to="/" class="navbar-item">
           <strong>ALGORAC</strong>
         </router-link>
-        <a class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <a class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu"
+          @click="showMobileMenu = !showMobileMenu">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div class="navbar-menu" id="navbar-menu">
+      <div class="navbar-menu" id="navbar-menu" :class="{ 'is-active': showMobileMenu }">
         <div class="navbar-end">
-          <router-link to="/summer" class="navbar-item">summer</router-link>
-          <router-link to="/winter" class="navbar-item">winter</router-link>
+          <router-link to="/projects" class="navbar-item">Projects</router-link>
+          <router-link to="/mentors" class="navbar-item">Mentors</router-link>
 
           <div class="navbar-item">
             <div class="buttons">
@@ -39,6 +40,16 @@
     </footer>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      showMobileMenu: false,
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 @import "../node_modules/bulma";
