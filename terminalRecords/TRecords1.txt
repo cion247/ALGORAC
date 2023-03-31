@@ -88,6 +88,8 @@ Password:
 Password (again):
 Superuser created successfully.
 
+python manage.py runserver
+
 ---------------------------------now trying to run server---------------------------------------------------------
 
 
@@ -100,10 +102,10 @@ vue create algorac_vue      #create vue project
 cd algorac_vue              #go inside vue project
 npm i axios                 #install axios
 npm i bulma                 #install bulma
-npm remove @vue/cli-plugin-eslint         #remove eslint, because I installed it at the prettier config
-                                           and it creates errors if it dosent like the number of spaces " "  
-                                           I add between divs, and the other formaters in my VS code
-                                           make it impossible to compile the site without an error
+npm remove @vue/cli-plugin-eslint #remove eslint, because I installed it at the prettier config
+                                  and it creates errors if it dosent like the number of spaces " "  
+                                  I add between divs, and the other formaters in my VS code
+                                  make it impossible to compile the site without an error
 
 npm run serve               #run the server
 

@@ -55,9 +55,10 @@ export default {
   methods: {
     getLatestProducts() {
       axios
-        .get('/api/v1/latest-products/')
+        .get('/api/users?page=2')
         .then(response => {
           this.latestProducts = response.data;
+          console.log(this.latestProducts)
         })
         .catch(error => {
           console.log(error)
@@ -66,3 +67,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.image {
+  margin: -1.25rem
+}
+</style>
