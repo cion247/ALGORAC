@@ -43,11 +43,13 @@ INSTALLED_APPS = [
     'corsheaders',
     'djoser',
 
+    'base',
+
 ]
 
 CORS_ALLOWED_ORIGINS = [
     # front-end address
-    "http://localhost:3000"
+    "http://localhost:8080"
     
 
 ]
@@ -55,7 +57,7 @@ CORS_ALLOWED_ORIGINS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'coarsheaders.middleware.CorsMiddleware',
+    
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
