@@ -43,11 +43,13 @@ INSTALLED_APPS = [
     'corsheaders',
     'djoser',
 
+    'base',
+
 ]
 
 CORS_ALLOWED_ORIGINS = [
     # front-end address
-    "http://localhost:3000"
+    "http://localhost:8080"
 
 
 ]

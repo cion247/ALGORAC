@@ -55,7 +55,7 @@ export default {
   methods: {
     getLatestProducts() {
       axios
-        .get('/api/users?page=2')
+        .get('/api/v1/latest-products/')
         .then(response => {
           this.latestProducts = response.data;
           console.log(this.latestProducts)
