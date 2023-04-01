@@ -4,5 +4,5 @@ from base.views import LatestNoticelistView, NoticedetaleView
 
 urlpatterns = [
     path('notices-latest/', LatestNoticelistView.as_view()),
-    path('notices-detals/', NoticedetaleView.as_view()),
+    path('notices-detals/<slug:notice_slug>', NoticedetaleView.as_view()),
 ]
