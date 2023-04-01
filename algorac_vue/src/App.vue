@@ -57,7 +57,6 @@ export default {
 </script>
 
 <style lang="scss">
-//@import "../node_modules/bulma";
 .footer {
   background-color: #25250e;
   height: 10px;
