@@ -109,7 +109,13 @@ npm remove @vue/cli-plugin-eslint #remove eslint, because I installed it at the 
 
 npm run serve               #run the server
 
+------------------------py cache conflict-----------------------------------------------------
+git checkout -b 000jd-main main
+git pull https://github.com/000jd/algorac.git main
 
+git checkout main
+git merge --no-ff 000jd-main
+git push origin main
 
 
 
