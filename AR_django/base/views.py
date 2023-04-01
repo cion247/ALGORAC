@@ -1,3 +1,4 @@
+from django.http import Http404
 from django.shortcuts import render
 
 from rest_framework.views import APIView
@@ -7,12 +8,20 @@ from .models import Gallery, Notice
 from .serializers import GallerySerializer, NoticeSerializer
 # Create your views here.
 
-# View for returning the latest 3 notices in the database
 class LatestNoticelistView(APIView):
     def get(self, request, format = None):
-        # Query the database for the latest 3 notices
         Notices = Notice.objects,all[0:3]
-        # Serialize the queryset of notices
         serializer = NoticeSerializer(Notices, many =True)
-        # Return serialized data as response
+        return Response(serializer.data)
+    
+class NoticedetaleView(APIView):
+    def get_object(self, notice_slug):
+        try:
+            return Notice.objects.get(slug=notice_slug)
+        except Notice.DoesNotExist:
+            raise Http404
+        
+    def get(self, notice_slug, format=None):
+        Notices = self.get_object(notice_slug)
+        serializer = NoticeSerializer(Notices)
         return Response(serializer.data)
