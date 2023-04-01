@@ -27,4 +27,7 @@ class NoticedetaleView(APIView):
         return Response(serializer.data)
 
 class LatestGallerylistView(APIView):
-    pass
+    def get(self, request, format = None):
+        Gallerys = Gallery.objects.all()[0:3]
+        serializer = GallerySerializer(Gallerys, many =True)
+        return Response(serializer.data)
