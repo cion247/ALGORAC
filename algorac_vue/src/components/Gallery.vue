@@ -2,12 +2,12 @@
   <div class="hello">
     <div class="columns is-multiline">
       <div class="column is-12">
-        <h2 class="is-size-2 has-text-centered">the notice board</h2>
+        <h2 class="is-size-2 has-text-centered">sliding gallery</h2>
       </div>
 
       <div
         class="column is-3"
-        v-for="notice in latestNotices"
+        v-for="notice in latestEvents"
         v-bind:key="notice.id"
       >
         <div class="box">
@@ -22,28 +22,28 @@
     </div>
   </div>
 </template>
-  
-  <script>
+    
+<script>
 import axios from "axios";
 
 export default {
-  name: "NoticeBoard",
+  name: "Gallery",
   data() {
     return {
-      latestNotices: [],
+      latestEvents: [],
     };
   },
   components: {},
   mounted() {
-    this.getLatestNotices();
+    this.getLatestEvents();
   },
   methods: {
-    getLatestNotices() {
+    getLatestevents() {
       axios
-        .get("notices-latest/")
+        .get("events-latest/")
         .then((response) => {
-          this.latestNotices = response.data;
-          console.log(this.latestNotices);
+          this.latestEvents = response.data;
+          console.log(this.latestEvents);
         })
         .catch((error) => {
           console.log(error);
@@ -52,13 +52,13 @@ export default {
   },
 };
 </script>
-  
-  <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+    
+    <!-- Add "scoped" attribute to limit CSS to this component only -->
+  <style scoped lang="scss">
 .hello {
-  background-color: #ffe28a;
+  background-color: #308349;
   height: 400px;
-  width: 50%;
+  width: 100%;
   padding: 10px;
 
   display: inline-block;
@@ -72,4 +72,4 @@ a {
   color: #42b983;
 }
 </style>
-  
+    

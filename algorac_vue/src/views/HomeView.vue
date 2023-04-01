@@ -9,12 +9,20 @@
       </div>
       <NoticeBoard />
     </section>
+    <section>
+      <gallery></gallery>
+    </section>
+    <section>
+      <AboutUs />
+    </section>
   </div>
 </template>
 
 <script >
 // @ is an alias to /src
 import NoticeBoard from "@/components/NoticeBoard.vue";
+import Gallery from "@/components/Gallery.vue";
+import AboutUs from "@/components/AboutUs.vue";
 import axios from "axios";
 
 export default {
@@ -24,6 +32,8 @@ export default {
   },
   components: {
     NoticeBoard,
+    Gallery,
+    AboutUs,
   },
 
   methods: {},
