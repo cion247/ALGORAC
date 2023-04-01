@@ -10,7 +10,7 @@ from .serializers import GallerySerializer, NoticeSerializer
 
 class LatestNoticelistView(APIView):
     def get(self, request, format = None):
-        Notices = Notice.objects,all[0:3]
+        Notices = Notice.objects.all()[0:3]
         serializer = NoticeSerializer(Notices, many =True)
         return Response(serializer.data)
     
