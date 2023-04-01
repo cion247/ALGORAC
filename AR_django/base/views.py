@@ -25,3 +25,9 @@ class NoticedetaleView(APIView):
         Notices = self.get_object(notice_slug)
         serializer = NoticeSerializer(Notices)
         return Response(serializer.data)
+
+class LatestGallerylistView(APIView):
+    def get(self, request, format = None):
+        Gallerys = Gallery.objects.all()[0:3]
+        serializer = GallerySerializer(Gallerys, many =True)
+        return Response(serializer.data)
