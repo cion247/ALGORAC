@@ -16,19 +16,19 @@
     </section>
     <div class="columns is-multiline">
       <div class="column is-12">
-        <h2 class="is-size-2 has-text-centered ">latest products</h2>
+        <h2 class="is-size-2 has-text-centered ">latest news</h2>
       </div>
 
-      <div class="column is-3" v-for="product in latestProducts" v-bind:key="product.id">
+      <div class="column is-3" v-for="notice in latestNotices" v-bind:key="notice.id">
         <div class="box">
           <figure class="image mb-4">
-            <img v-bind:src="product.get_thumbnail">
+            <img v-bind:src="notice.get_image">
           </figure>
-          <h3 class="is-size-4">{{ product.name }}
+          <h3 class="is-size-4">{{ notice.topic }}
 
           </h3>
-          <p class="is-size-6 has-text-grey">${{ product.price }}</p>
-          View details
+
+          notice details
         </div>
       </div>
     </div>
@@ -44,21 +44,21 @@ export default {
   name: "Home",
   data() {
     return {
-      latestProducts: []
+      latestNotices: []
     }
   },
   components: {
   },
   mounted() {
-    this.getLatestProducts()
+    this.getLatestNotices()
   },
   methods: {
-    getLatestProducts() {
+    getLatestNotices() {
       axios
-        .get('/api/v1/latest-products/')
+        .get('notices-latest/')
         .then(response => {
-          this.latestProducts = response.data;
-          console.log(this.latestProducts)
+          this.latestNotices = response.data;
+          console.log(this.latestNotices)
         })
         .catch(error => {
           console.log(error)
