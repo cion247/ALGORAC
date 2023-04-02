@@ -1,103 +1,29 @@
-PS C:\Users\xocio\Documents\GitHub\algorac> python --version
-Python 3.11.2
-
-PS C:\Users\xocio\Documents\GitHub\algorac> pip install virtualenv
-Successfully installed distlib-0.3.6 filelock-3.10.7 platformdirs-3.2.0 virtualenv-20.21.0
-
-PS C:\Users\xocio\Documents\GitHub\algorac> virtualenv environment_3_11_2
-created virtual environment CPython3.10.10.final.0-64 in 17946ms
-  creator Venv(dest=C:\Users\xocio\Documents\GitHub\algorac\environment_3_11_2, clear=False, no_vcs_ignore=False, global=False, describe=CPython3Windows)
-  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\xocio\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\Local\pypa\virtualenv)
-    added seed packages: pip==23.0.1, setuptools==67.4.0, wheel==0.38.4
-  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+-----------------------------------back end set up------------------------------------------
+python --version
+pip install virtualenv
+virtualenv Venv_0
   
+------------------------------------Venv_0---------------------------------------------------
+Venv_0\Scripts\activate   
 
-PS C:\Users\xocio\Documents\GitHub\algorac> environment_3_11_2\Scripts\activate   
+pip install django
+pip install django-rest-framework
+pip install django-cors-headers
+pip install djoser 
+pip install pillow
+pip install stripel
+                                                   
+cd AR_django                                         
 
+python manage.py makemigrations
+python manage.py migrate    
+python manage.py createsuperuser
 
-(environment_3_11_2) PS C:\Users\xocio\Documents\GitHub\algorac> pip install django
-Successfully installed asgiref-3.6.0 django-4.1.7 sqlparse-0.4.3 tzdata-2023.3
+-----------------------------------run backend in Venv_0------------------------------------------------
+Venv_0\Scripts\activate 
+python manage.py runserver
 
-
-(environment_3_11_2) PS C:\Users\xocio\Documents\GitHub\algorac> pip install django-rest-framework
-Collecting django-rest-framework
-Successfully installed django-rest-framework-0.1.0 djangorestframework-3.14.0 pytz-2023.3
-
-
-(environment_3_11_2) PS C:\Users\xocio\Documents\GitHub\algorac> pip install django-cors-headers
-Collecting django-cors-headers
-Successfully installed django-cors-headers-3.14.0
-
-
-(environment_3_11_2) PS C:\Users\xocio\Documents\GitHub\algorac> pip install djoser
-Collecting djoser
-|
-Installing collected packages: itypes, django-templated-mail, urllib3, uritemplate, six, pyjwt, pycparser, oauthlib, MarkupSafe, idna, defusedxml, charset-normalizer, certifi, requests, python3-openid, jinja2, cffi, requests-oauthlib, djangorestframework-simplejwt, cryptography, coreschema, social-auth-core, coreapi, social-auth-app-django, djoser
-|
-Successfully installed MarkupSafe-2.1.2 certifi-2022.12.7 cffi-1.15.1 charset-normalizer-3.1.0 coreapi-2.3.3 coreschema-0.0.4 cryptography-40.0.1 defusedxml-0.7.1 django-templated-mail-1.1.1 djangorestframework-simplejwt-4.8.0 djoser-2.1.0 idna-3.4 itypes-1.2.0 jinja2-3.1.2 oauthlib-3.2.2 pycparser-2.21 pyjwt-2.6.0 python3-openid-3.2.0 requests-2.28.2 requests-oauthlib-1.3.1 six-1.16.0 social-auth-app-django-4.0.0 social-auth-core-4.4.0 uritemplate-4.1.1 urllib3-1.26.15      
-
-
-(environment_3_11_2) PS C:\Users\xocio\Documents\GitHub\algorac> pip install pillow
-Collecting pillow
-Successfully installed pillow-9.4.0
-
-
-(environment_3_11_2) PS C:\Users\xocio\Documents\GitHub\algorac> pip install stripe
-Collecting stripe       
-Requirement already satisfied: idna<4,>=2.5 in c:\users\xocio\docum
-                                                                   
-
-(environment_3_11_2) PS C:\Users\xocio\Documents\GitHub\algorac> cd AR_django                                         
-
-
-(environment_3_11_2) PS C:\Users\xocio\Documents\GitHub\algorac\AR_django> python manage.py makemigrations
-No changes detected # but something did change
-
-
-(environment_3_11_2) PS C:\Users\xocio\Documents\GitHub\algorac\AR_django> python manage.py migrate       
-Operations to perform:
-  Apply all migrations: admin, auth, authtoken, contenttypes, sessions
-Running migrations:
-  Applying contenttypes.0001_initial... OK
-  Applying auth.0001_initial... OK
-  Applying admin.0001_initial... OK
-  Applying admin.0002_logentry_remove_auto_add... OK
-  Applying admin.0003_logentry_add_action_flag_choices... OK
-  Applying contenttypes.0002_remove_content_type_name... OK
-  Applying auth.0002_alter_permission_name_max_length... OK
-  Applying auth.0003_alter_user_email_max_length... OK
-  Applying auth.0004_alter_user_username_opts... OK
-  Applying auth.0005_alter_user_last_login_null... OK
-  Applying auth.0006_require_contenttypes_0002... OK
-  Applying auth.0007_alter_validators_add_error_messages... OK
-  Applying auth.0008_alter_user_username_max_length... OK
-  Applying auth.0009_alter_user_last_name_max_length... OK
-  Applying auth.0010_alter_group_name_max_length... OK
-  Applying auth.0011_update_proxy_permissions... OK
-  Applying auth.0012_alter_user_first_name_max_length... OK
-  Applying authtoken.0001_initial... OK    
-  Applying authtoken.0002_auto_20160226_1747... OK
-  Applying authtoken.0003_tokenproxy... OK 
-  Applying sessions.0001_initial... OK     
-
-
-(environment_3_11_2) PS C:\Users\xocio\Documents\GitHub\algorac\AR_django> python manage.py createsuperuser
-Username (leave blank to use 'xocio'): SuperAdmin
-Email address: Joydip@tutanota.com
-Password: 
-Password (again):
-Superuser created successfully.
-
------------------------------------run backend ----------------------------------------------------------------
-GitHub\algorac> environment_3_11_2\Scripts\activate
-GitHub\algorac> cd AR_django 
-GitHub\algorac\AR_django> python manage.py runserver
-
----------------------------------now trying to run server---------------------------------------------------------
-
-
-
-------------------------------------the front end----------------------------------------------------------------
+------------------------------------the front end--------------------------------------------------------
 
 cd ..                       #go to root directory
 npm i -g @vue/cli           #install vue cli
@@ -109,17 +35,12 @@ npm remove @vue/cli-plugin-eslint #remove eslint, because I installed it at the 
                                   and it creates errors if it dosent like the number of spaces " "  
                                   I add between divs, and the other formaters in my VS code
                                   make it impossible to compile the site without an error
+------------------------------------------run front end---------------------------------------------------
 
-               #run the server
+cd algorac_vue 
+npm run serve             
 
-------------------------py cache conflict-----------------------------------------------------
-git checkout -b 000jd-main main
-git pull https://github.com/000jd/algorac.git main
-
-git checkout main
-git merge --no-ff 000jd-main
-git push origin main
-
+-------------------------------------------------------------------------------------------------------------
 
 
 
