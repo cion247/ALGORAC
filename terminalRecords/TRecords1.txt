@@ -110,7 +110,7 @@ npm remove @vue/cli-plugin-eslint #remove eslint, because I installed it at the 
                                   I add between divs, and the other formaters in my VS code
                                   make it impossible to compile the site without an error
 
-npm run serve               #run the server
+               #run the server
 
 ------------------------py cache conflict-----------------------------------------------------
 git checkout -b 000jd-main main
