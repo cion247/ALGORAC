@@ -34,3 +34,26 @@ class LatestGallerylistView(APIView):
         Gallerys = Gallery.objects.all()[0:3]
         serializer = GallerySerializer(Gallerys, many=True)
         return Response(serializer.data)
+
+
+class FullGalleryView(APIView):
+    pass
+
+
+class ProgectView(APIView):
+    pass
+
+
+class MassgesView(APIView):
+    pass
+
+class RegisterUserView(APIView):
+    pass
+
+
+class LoginUserView(APIView):
+    pass
+
+
+class LogoutUserView(APIView):
+    pass
