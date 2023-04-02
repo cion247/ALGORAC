@@ -36,3 +36,15 @@ class Notice(models.Model):
 
     def __str__(self):
         return self.topic
+
+
+class pojects(models.Model):
+
+    def __str__(self):
+        pass
+
+
+class Massges(models.Model):
+
+    def __str__(self):
+        pass
