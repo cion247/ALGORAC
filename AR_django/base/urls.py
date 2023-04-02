@@ -1,6 +1,6 @@
 from django.urls import path, include
 
-from base.views import LatestNoticelistView, NoticedetaleView,LatestGallerylistView
+from base.views import LatestNoticelistView, NoticedetaleView, LatestGallerylistView
 
 urlpatterns = [
     path('notices-latest/', LatestNoticelistView.as_view()),
