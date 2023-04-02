@@ -88,7 +88,10 @@ Password:
 Password (again):
 Superuser created successfully.
 
-python manage.py runserver
+-----------------------------------run backend ----------------------------------------------------------------
+GitHub\algorac> environment_3_11_2\Scripts\activate
+GitHub\algorac> cd AR_django 
+GitHub\algorac\AR_django> python manage.py runserver
 
 ---------------------------------now trying to run server---------------------------------------------------------
 

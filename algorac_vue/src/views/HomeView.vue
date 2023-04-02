@@ -1,75 +1,48 @@
 <template>
   <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" /> -->
-    <section class="hero is-medium is-dark mb-6">
-      <div class="hero-body has-text-centered">
-        <p class="title mb-6">
-          welcome to ALGORAC
-        </p>
-        <p class="subtitle">
-          the ICFAI coding club
-        </p>
+    <NavBar />
 
+    <section>
+      <div class="intro">
+        <p class="title mb-6">welcome to hhhhhhhhhhhhhhhhhhhhh ALGORAC</p>
+        <p class="subtitle">the ICFAI coding club</p>
       </div>
-
+      <NoticeBoard />
     </section>
-    <div class="columns is-multiline">
-      <div class="column is-12">
-        <h2 class="is-size-2 has-text-centered ">latest products</h2>
-      </div>
 
-      <div class="column is-3" v-for="product in latestProducts" v-bind:key="product.id">
-        <div class="box">
-          <figure class="image mb-4">
-            <img v-bind:src="product.get_thumbnail">
-          </figure>
-          <h3 class="is-size-4">{{ product.name }}
-
-          </h3>
-          <p class="is-size-6 has-text-grey">${{ product.price }}</p>
-          View details
-        </div>
-      </div>
-    </div>
+    <gallery />
+    <AboutUs />
   </div>
 </template>
 
 <script >
-// @ is an alias to /src
-// import HelloWorld from "@/components/HelloWorld.vue";
-import axios from 'axios'
+import NoticeBoard from "@/components/NoticeBoard.vue";
+import Gallery from "@/components/Gallery.vue";
+import AboutUs from "@/components/AboutUs.vue";
+import NavBar from "@/components/NavBar.vue";
 
 export default {
   name: "Home",
   data() {
-    return {
-      latestProducts: []
-    }
+    return {};
   },
   components: {
+    NoticeBoard,
+    Gallery,
+    AboutUs,
+    NavBar,
   },
-  mounted() {
-    this.getLatestProducts()
-  },
-  methods: {
-    getLatestProducts() {
-      axios
-        .get('/api/v1/latest-products/')
-        .then(response => {
-          this.latestProducts = response.data;
-          console.log(this.latestProducts)
-        })
-        .catch(error => {
-          console.log(error)
-        })
-    }
-  }
+
+  methods: {},
 };
 </script>
 
 <style scoped>
-.image {
-  margin: -1.25rem
+.intro {
+  height: 400px;
+  display: inline-block;
+  width: 50%;
+  padding: 10px;
+  color: rgb(0, 0, 0);
 }
 </style>
