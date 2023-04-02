@@ -58,6 +58,10 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    # 'coarsheaders.middleware.CorsMiddleware',
+>>>>>>> parent of 626e052 (add cross header)
 =======
     # 'coarsheaders.middleware.CorsMiddleware',
 >>>>>>> parent of 626e052 (add cross header)
