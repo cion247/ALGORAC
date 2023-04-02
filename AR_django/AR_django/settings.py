@@ -55,20 +55,10 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    # 'coarsheaders.middleware.CorsMiddleware',
->>>>>>> parent of 626e052 (add cross header)
-=======
-    # 'coarsheaders.middleware.CorsMiddleware',
->>>>>>> parent of 626e052 (add cross header)
-=======
-    # 'coarsheaders.middleware.CorsMiddleware',
->>>>>>> parent of 626e052 (add cross header)
+    #'coarsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
