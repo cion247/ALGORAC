@@ -17,7 +17,7 @@ class LatestNoticelistView(APIView):
         serializer = NoticeSerializer(notices, many=True)
         return Response(serializer.data)
 
-
+class NoticedetailView(APIView):
     def get_object(self, notice_slug):
         try:
             return Notice.objects.get(slug=notice_slug)
