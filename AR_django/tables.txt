@@ -1,0 +1,38 @@
+Gallery[GET] -> (Latest Gallery[ for front page],
+             complit gallery[ for main gallery page])-->views
+    {data filds for model}
+  --topic
+    slug
+    description
+    image
+    date_added
+
+Notice[GET] -> (Latest Notice[ for latest img notices],
+             complit Notice[ for all notices])-->views
+    {data filds for model}
+  --topic
+    Slug
+    description
+    date_added
+
+user(model) -> (signup, login, logout)--views
+  --permitions -> (anonemouser, staf, admin)
+
+Messages[POST] -> (RegisterUserView[for resistering user],
+             LoginUserView[for loging the user in],
+             LogoutUserView[for loging the user out])-->views
+
+     {data filds for model}
+  --name
+    email
+    description
+
+Progects[GET] -> (Latest progects[ for latest progects],
+             complit progects[ for all progects])-->views
+    {data filds for model}
+  --tital
+    image
+    Slug
+    description
+    creater
+    date_added
