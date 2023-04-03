@@ -36,28 +36,26 @@ class Notice(models.Model):
 
     def __str__(self):
         return self.topic
-    
-    
-   
+
 
 class projects(models.Model):
-    title = models.CharField( max_length=50)
-    image= models.ImageField( blank= True, null=True)
-    slug= models.SlugField( null=True)
+    title = models.CharField(max_length=50)
+    image = models.ImageField(blank=True, null=True)
+    slug = models.SlugField(null=True)
     description = models.TextField(blank=True, null=True)
-    creator= models.TextField()
-    time_added= models.TimeField(auto_now_add=True)
+    creator = models.TextField()
+    time_added = models.TimeField(auto_now_add=True)
 
     def __str__(self):
         return self.title
-    
+
 
 class messages(models.Model):
-    name= models.CharField(max_length=100)
-    email= models.EmailField()
-    description= models.TextField(blank=True, null=True)
-    time_added= models.TimeField( auto_now_add=True)
-    
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    description = models.TextField(blank=True, null=True)
+    time_added = models.TimeField(auto_now_add=True)
+
     class Meta:
         ordering = ['-time_added']
 
