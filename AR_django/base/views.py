@@ -17,6 +17,7 @@ class LatestNoticelistView(APIView):
         serializer = NoticeSerializer(notices, many=True)
         return Response(serializer.data)
 
+
 class NoticedetailView(APIView):
     def get_object(self, notice_slug):
         try:
@@ -52,24 +53,23 @@ class FullGalleryView(APIView):
         return Response(serializer.data)
 
 
-
 class ProjectView(APIView):
     def get(self, request, format=None):
-        project = projects.objects.all()  # Corrected variable name
+        project = projects.objects.all()
+        if not project:
+            # Corrected variable name
+            return Response({'message': 'No data found'})
         serializer = ProjectSerializer(project, many=True)
         return Response(serializer.data)
-        
-    
-    def post(self, request, format=None):
-        project = projects.objects.all()  # Corrected variable name
-        serializer = ProjectSerializer(project, many=True)
-        return Response(serializer.data)
-     
+
+
 class MessagesView(APIView):
-     def get(self, request, format=None):
-        message = message.objects.all()
-        serializer = MessagesSerializer(message, many=True)
-        return Response(serializer.data)
+    def post(self, request, format=None):
+        massages = MessagesSerializer(data=request.data)
+        if massages.is_valid():
+            massages.save()
+            return Response(massages.data, status=status.HTTP_201_CREATED)
+        return Response(massages.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 class RegisterUserView(APIView):

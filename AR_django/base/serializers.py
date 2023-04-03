@@ -24,7 +24,9 @@ class ProjectSerializer(serializers.ModelSerializer):
 
 
 class MessagesSerializer(serializers.ModelSerializer):
-    pass
+    class Meta:
+        model = messages
+        fields = '__all__'
 
 
 class UserSerializer(serializers.ModelSerializer):
