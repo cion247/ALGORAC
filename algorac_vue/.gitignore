@@ -2,6 +2,13 @@
 node_modules
 /dist
 
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+media
 
 # local env files
 .env.local
