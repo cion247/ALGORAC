@@ -11,12 +11,13 @@ from .serializers import GallerySerializer, NoticeSerializer, ProjectSerializer,
 
 class LatestNoticelistView(APIView):
     def get(self, request, format=None):
-        Notices = Notice.objects.all()[0:3]
-        serializer = NoticeSerializer(Notices, many=True)
+        notices = Notice.objects.all()[:3]
+        if not notices:
+            return Response({'message': 'No data found'})
+        serializer = NoticeSerializer(notices, many=True)
         return Response(serializer.data)
 
 
-class NoticedetailView(APIView):
     def get_object(self, notice_slug):
         try:
             return Notice.objects.get(slug=notice_slug)
@@ -31,7 +32,9 @@ class NoticedetailView(APIView):
 
 class LatestGallerylistView(APIView):
     def get(self, request, format=None):
-        Gallerys = Gallery.objects.all()[0:3]
+        Gallerys = Gallery.objects.all()[:3]
+        if not Gallerys:
+            return Response({'message': 'No data found'})
         serializer = GallerySerializer(Gallerys, many=True)
         return Response(serializer.data)
 
