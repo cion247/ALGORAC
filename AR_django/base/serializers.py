@@ -1,7 +1,7 @@
 
 from rest_framework import serializers
 
-from .models import Gallery, Notice
+from .models import Gallery, Notice, projects, messages
 from django.contrib.auth.models import User
 
 
@@ -17,11 +17,13 @@ class NoticeSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class ProgectSerializer(serializers.ModelSerializer):
-    pass
+class ProjectSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = projects
+        fields = '__all__'
 
 
-class MassagesSerializer(serializers.ModelSerializer):
+class MessagesSerializer(serializers.ModelSerializer):
     pass
 
 

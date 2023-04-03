@@ -4,8 +4,8 @@ from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
-from .models import Gallery, Notice
-from .serializers import GallerySerializer, NoticeSerializer
+from .models import Gallery, Notice, projects
+from .serializers import GallerySerializer, NoticeSerializer, ProjectSerializer, MessagesSerializer
 # Create your views here.
 
 
@@ -16,7 +16,7 @@ class LatestNoticelistView(APIView):
         return Response(serializer.data)
 
 
-class NoticedetaleView(APIView):
+class NoticedetailView(APIView):
     def get_object(self, notice_slug):
         try:
             return Notice.objects.get(slug=notice_slug)
@@ -37,15 +37,37 @@ class LatestGallerylistView(APIView):
 
 
 class FullGalleryView(APIView):
-    pass
+    def get_object(self, notice_slug):
+        try:
+            return Notice.objects.get(slug=notice_slug)
+        except Notice.DoesNotExist:
+            raise Http404
+
+    def get(self, notice_slug, format=None):
+        Notices = self.get_object(notice_slug)
+        serializer = NoticeSerializer(Notices)
+        return Response(serializer.data)
 
 
-class ProgectView(APIView):
-    pass
 
+class ProjectView(APIView):
+    def get(self, request, format=None):
+        project = projects.objects.all()  # Corrected variable name
+        serializer = ProjectSerializer(project, many=True)
+        return Response(serializer.data)
+        
+    
+    def post(self, request, format=None):
+        project = projects.objects.all()  # Corrected variable name
+        serializer = ProjectSerializer(project, many=True)
+        return Response(serializer.data)
+     
+class MessagesView(APIView):
+     def get(self, request, format=None):
+        message = message.objects.all()
+        serializer = MessagesSerializer(message, many=True)
+        return Response(serializer.data)
 
-class MassgesView(APIView):
-    pass
 
 class RegisterUserView(APIView):
     pass
@@ -56,4 +78,8 @@ class LoginUserView(APIView):
 
 
 class LogoutUserView(APIView):
+    pass
+
+
+class FullGalleryView(APIView):
     pass
