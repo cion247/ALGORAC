@@ -5,10 +5,10 @@ node_modules
 *.log
 *.pot
 *.pyc
-/AR_django/AR_django/__pycache__
-/AR_django/AR_django/local_settings.py
-/AR_django/AR_django/db.sqlite3
-/AR_django/AR_django/media
+./AR_django/AR_django/__pycache__
+./AR_django/AR_django/local_settings.py
+./AR_django/AR_django/db.sqlite3
+./AR_django/AR_django/media
 
 # local env files
 .env.local
