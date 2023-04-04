@@ -3,14 +3,11 @@
     <div class="columns is-multiline">
       <div class="column is-12">
         <h2 class="is-size-2 has-text-centered">the notice board</h2>
-        <h2 class="is-size-2 has-text-centered">
-          {{ this.latestNotices }}
-        </h2>
       </div>
 
       <div
         class="column is-3"
-        v-for="notice in latestNotices"
+        v-for="notice in this.latestNotices"
         v-bind:key="notice.id"
       >
         <div class="box">

@@ -38,7 +38,7 @@ export default {
     this.getLatestEvents();
   },
   methods: {
-    getLatestevents() {
+    getLatestEvents() {
       axios
         .get("events-latest/")
         .then((response) => {
