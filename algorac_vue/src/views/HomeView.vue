@@ -4,7 +4,7 @@
 
     <section>
       <div class="intro">
-        <p class="title mb-6">welcome to ALGORAC</p>
+        <p class="title mb-6">welcome to  ALGORAC</p>
         <p class="subtitle">the ICFAI coding club</p>
       </div>
       <NoticeBoard />
