@@ -14,7 +14,13 @@ class GallerySerializer(serializers.ModelSerializer):
 class NoticeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Notice
-        fields = '__all__'
+        fields = (
+            "id",
+            "topic",
+            "Slug",
+            "description",
+            "date_added"
+        )
 
 
 class ProjectSerializer(serializers.ModelSerializer):

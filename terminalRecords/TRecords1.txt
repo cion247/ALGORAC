@@ -16,7 +16,8 @@ pip install stripel
 cd AR_django                                         
 
 python manage.py makemigrations
-python manage.py migrate    
+python manage.py migrate 
+   
 python manage.py createsuperuser
 
 -----------------------------------run backend in Venv_0------------------------------------------------

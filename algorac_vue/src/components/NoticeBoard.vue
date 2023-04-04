@@ -3,6 +3,9 @@
     <div class="columns is-multiline">
       <div class="column is-12">
         <h2 class="is-size-2 has-text-centered">the notice board</h2>
+        <h2 class="is-size-2 has-text-centered">
+          {{ this.latestNotices }}
+        </h2>
       </div>
 
       <div
@@ -11,10 +14,8 @@
         v-bind:key="notice.id"
       >
         <div class="box">
-          <figure class="image mb-4">
-            <img v-bind:src="notice.get_image" />
-          </figure>
           <h3 class="is-size-4">{{ notice.topic }}</h3>
+          <h1 class="is-size-4">{{ notice.description }}</h1>
 
           notice details
         </div>
@@ -23,9 +24,8 @@
   </div>
 </template>
   
-  <script>
+<script>
 import axios from "axios";
-
 export default {
   name: "NoticeBoard",
   data() {
@@ -40,10 +40,11 @@ export default {
   methods: {
     getLatestNotices() {
       axios
-        .get("notices-latest/")
+        .get("/api/v1/notices-latest/")
         .then((response) => {
           this.latestNotices = response.data;
           console.log(this.latestNotices);
+          console.log(this.latestNotices.topic);
         })
         .catch((error) => {
           console.log(error);
@@ -53,7 +54,6 @@ export default {
 };
 </script>
   
-  <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .hello {
   background-color: #ffe28a;
