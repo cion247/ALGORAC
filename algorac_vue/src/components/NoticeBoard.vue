@@ -1,20 +1,23 @@
 <template>
-  <div class="hello">
-    <div class="columns is-multiline">
-      <div class="column is-12">
-        <h2 class="is-size-2 has-text-centered">the notice board</h2>
-      </div>
+  <div
+    class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 bg-gray-200 rounded-lg m-8 h-96 border-4 border-gray-900 text-gray-900 p-2 overflow-auto"
+  >
+    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+      Notice Board
+    </h1>
 
+    <div class="flex flex-wrap m-2">
+      <!-- notices -->
       <div
-        class="column is-3"
+        class="p-2 xl:w-1/4 md:w-1/2 w-full"
         v-for="notice in this.latestNotices"
         v-bind:key="notice.id"
       >
-        <div class="box">
-          <h3 class="is-size-4">{{ notice.topic }}</h3>
-          <h1 class="is-size-4">{{ notice.description }}</h1>
-
-          notice details
+        <div
+          class="h-full p-3 rounded-lg border-2 border-gray-900 flex flex-col relative overflow-hidden"
+        >
+          <h1>{{ notice.topic }}</h1>
+          <h1>{{ notice.description }}</h1>
         </div>
       </div>
     </div>

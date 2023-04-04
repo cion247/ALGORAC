@@ -11,7 +11,7 @@ from .serializers import GallerySerializer, NoticeSerializer, ProjectSerializer,
 
 class LatestNoticelistView(APIView):
     def get(self, request, format=None):
-        notices = Notice.objects.all()[0:3]
+        notices = Notice.objects.all()[0:10]
         if not notices:
             return Response({'message': 'No data found'})
         serializer = NoticeSerializer(notices, many=True)
