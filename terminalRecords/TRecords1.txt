@@ -12,6 +12,7 @@ pip install django-cors-headers
 pip install djoser 
 pip install pillow
 pip install stripel
+pip install environ
                                                    
 cd AR_django                                         
 
