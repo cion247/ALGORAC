@@ -1,7 +1,7 @@
 
 from rest_framework import serializers
 
-from .models import Gallery, Notice, projects, messages
+from .models import Gallery, Mentor, Notice, projects, messages
 from django.contrib.auth.models import User
 
 
@@ -35,5 +35,7 @@ class MessagesSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class UserSerializer(serializers.ModelSerializer):
-    pass
+class MentorSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Mentor
+        fields = '__all__'
