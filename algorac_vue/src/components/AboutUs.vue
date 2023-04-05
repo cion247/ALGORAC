@@ -33,20 +33,20 @@ export default {
       
     <style scoped lang="scss">
 .hello {
-  background-color: #306983;
+  background-color: aqua;
   height: 400px;
   width: 100%;
   padding: 10px;
 
   display: inline-block;
-  color: black;
+  color: rgb(47, 5, 77);
 }
 h3 {
   margin: 40px 0 0;
 }
 
 a {
-  color: #42b983;
+  color: aqua;
 }
 </style>
       
