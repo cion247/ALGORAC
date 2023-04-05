@@ -4,14 +4,14 @@ from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from .models import Gallery, Notice, projects
-from .serializers import GallerySerializer, NoticeSerializer, ProjectSerializer, MessagesSerializer
+from .models import Gallery, Mentor, Notice, projects
+from .serializers import GallerySerializer, MentorSerializer, NoticeSerializer, ProjectSerializer, MessagesSerializer
 # Create your views here.
 
 
 class LatestNoticelistView(APIView):
     def get(self, request, format=None):
-        notices = Notice.objects.all()[0:10]
+        notices = list(Notice.objects.all()[0:3])
         if not notices:
             return Response({'message': 'No data found'})
         serializer = NoticeSerializer(notices, many=True)
@@ -72,17 +72,10 @@ class MessagesView(APIView):
         return Response(massages.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-class RegisterUserView(APIView):
-    pass
-
-
-class LoginUserView(APIView):
-    pass
-
-
-class LogoutUserView(APIView):
-    pass
-
-
-class FullGalleryView(APIView):
-    pass
+class MentorView(APIView):
+    def post(self, request, format = None):
+        mentor = Mentor.objects.all()
+        if not mentor:
+            return Response({'message': 'No data found'})
+        serializer = MentorSerializer(mentor, many = True)
+        return Response(serializer.data)
