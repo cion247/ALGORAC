@@ -25,6 +25,7 @@
 
     <gallery />
     <AboutUs />
+    <Footer />
   </div>
 </template>
 
@@ -33,6 +34,7 @@ import NoticeBoard from "@/components/NoticeBoard.vue";
 import Gallery from "@/components/Gallery.vue";
 import AboutUs from "@/components/AboutUs.vue";
 import NavBar from "@/components/NavBar.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "Home",
@@ -44,6 +46,7 @@ export default {
     Gallery,
     AboutUs,
     NavBar,
+    Footer,
   },
 
   methods: {},
