@@ -15,8 +15,8 @@
             ALGORAC <br class="hidden lg:inline-block" />coding club
           </h1>
           <p class="mb-8 leading-relaxed">
-            welcome to the algorac coding club where we give you hope for a
-            better future
+            welcome to the algorac coding club <br />where we give you hope for
+            a better future
           </p>
         </div>
         <NoticeBoard />
