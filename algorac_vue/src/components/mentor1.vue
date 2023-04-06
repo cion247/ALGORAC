@@ -14,8 +14,8 @@
         <section class="text-gray-600 body-font">
             <div class="container  px-5 py-24 mx-auto">
               <div class="flex flex-wrap -m-4">
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                  <a class="img1">
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full rounded-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
                     <img alt="ecommerce" class="reg1" src="https://tse1.mm.bing.net/th?id=OIP.oYcV5Lo-aH4XtWGyk2IgBgHaE8&pid=Api&P=0">
                   </a>
                   <div class="mt-4">
