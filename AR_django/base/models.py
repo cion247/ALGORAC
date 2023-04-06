@@ -38,13 +38,39 @@ class Notice(models.Model):
         return self.topic
 
 
-class pojects(models.Model):
+class projects(models.Model):
+    title = models.CharField(max_length=50)
+    image = models.ImageField(blank=True, null=True)
+    slug = models.SlugField(null=True)
+    description = models.TextField(blank=True, null=True)
+    creator = models.TextField()
+    time_added = models.TimeField(auto_now_add=True)
 
     def __str__(self):
-        pass
+        return self.title
 
 
-class Massges(models.Model):
+class messages(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    description = models.TextField(blank=True, null=True)
+    time_added = models.TimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-time_added']
 
     def __str__(self):
-        pass
+        return self.name
+
+class Mentor(models.Model):
+    name = models.CharField(max_length=256)
+    email = models.EmailField()
+    image = models.ImageField(blank=True, null = True,)
+    description = models.TextField(blank=True, null = True)
+    created = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ('-created')
+        
+    def __str__(self):
+        return self.name

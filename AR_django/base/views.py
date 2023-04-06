@@ -3,20 +3,22 @@ from django.shortcuts import render
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
-
-from .models import Gallery, Notice
-from .serializers import GallerySerializer, NoticeSerializer
+from rest_framework import status
+from .models import Gallery, Mentor, Notice, projects
+from .serializers import GallerySerializer, MentorSerializer, NoticeSerializer, ProjectSerializer, MessagesSerializer
 # Create your views here.
 
 
 class LatestNoticelistView(APIView):
     def get(self, request, format=None):
-        Notices = Notice.objects.all()[0:3]
-        serializer = NoticeSerializer(Notices, many=True)
+        notices = list(Notice.objects.all()[0:3])
+        if not notices:
+            return Response({'message': 'No data found'})
+        serializer = NoticeSerializer(notices, many=True)
         return Response(serializer.data)
 
 
-class NoticedetaleView(APIView):
+class NoticedetailView(APIView):
     def get_object(self, notice_slug):
         try:
             return Notice.objects.get(slug=notice_slug)
@@ -31,29 +33,49 @@ class NoticedetaleView(APIView):
 
 class LatestGallerylistView(APIView):
     def get(self, request, format=None):
-        Gallerys = Gallery.objects.all()[0:3]
+        Gallerys = Gallery.objects.all()[:3]
+        if not Gallerys:
+            return Response({'message': 'No data found'})
         serializer = GallerySerializer(Gallerys, many=True)
         return Response(serializer.data)
 
 
 class FullGalleryView(APIView):
-    pass
+    def get_object(self, notice_slug):
+        try:
+            return Notice.objects.get(slug=notice_slug)
+        except Notice.DoesNotExist:
+            raise Http404
+
+    def get(self, notice_slug, format=None):
+        Notices = self.get_object(notice_slug)
+        serializer = NoticeSerializer(Notices)
+        return Response(serializer.data)
 
 
-class ProgectView(APIView):
-    pass
+class ProjectView(APIView):
+    def get(self, request, format=None):
+        project = projects.objects.all()
+        if not project:
+            # Corrected variable name
+            return Response({'message': 'No data found'})
+        serializer = ProjectSerializer(project, many=True)
+        return Response(serializer.data)
 
 
-class MassgesView(APIView):
-    pass
-
-class RegisterUserView(APIView):
-    pass
-
-
-class LoginUserView(APIView):
-    pass
+class MessagesView(APIView):
+    def post(self, request, format=None):
+        massages = MessagesSerializer(data=request.data)
+        if massages.is_valid():
+            massages.save()
+            return Response(massages.data, status=status.HTTP_201_CREATED)
+        return Response(massages.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-class LogoutUserView(APIView):
-    pass
+class MentorView(APIView):
+    def post(self, request, format = None):
+        mentor = Mentor.objects.all()
+        if not mentor:
+            return Response({'message': 'No data found'})
+        serializer = MentorSerializer(mentor, many = True)
+        return Response(serializer.data)

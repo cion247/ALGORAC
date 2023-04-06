@@ -2,6 +2,14 @@
 node_modules
 /dist
 
+*.log
+*.pot
+*.pyc
+./AR_django/AR_django/__pycache__/
+./AR_django/base/__pycache__/
+./AR_django/AR_django/local_settings.py
+./AR_django/AR_django/db.sqlite3
+./AR_django/AR_django/media
 
 # local env files
 .env.local
