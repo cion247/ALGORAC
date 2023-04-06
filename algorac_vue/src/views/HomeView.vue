@@ -66,4 +66,9 @@ export default {
   padding: 10px;
   color: rgb(0, 0, 0);
 }
+.home{
+  background:linear-gradient(skyblue,rgb(0,0,0));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 </style>
