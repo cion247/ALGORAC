@@ -27,10 +27,10 @@ python manage.py runserver
 
 ------------------------------------the front end--------------------------------------------------------
 
-cd ..                       #go to root directory
-npm i -g @vue/cli           #install vue cli
-vue create algorac_vue      #create vue project
-cd algorac_vue              #go inside vue project
+cd ..                       
+npm i -g @vue/cli           
+vue create algorac_vue      
+cd algorac_vue              
 npm i axios                 #install axios
 npm i bulma                 #install bulma
 npm remove @vue/cli-plugin-eslint #remove eslint, because I installed it at the prettier config
