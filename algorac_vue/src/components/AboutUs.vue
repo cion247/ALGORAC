@@ -64,13 +64,13 @@ export default {
       
 <style scoped lang="scss">
 .hello {
-  background-color: #d2dfe6;
-  height: 850px;
+  background-color: #306983;
+  height: 400px;
   width: 100%;
   padding: 10px;
 
   display: inline-block;
-  color: black;
+  color: rgb(47, 5, 77);
 }
 
 h3 {
@@ -78,7 +78,7 @@ h3 {
 }
 
 a {
-  color: #42b983;
+  color: aqua;
 }
 </style>
       
