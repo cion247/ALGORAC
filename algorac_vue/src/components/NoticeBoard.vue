@@ -54,22 +54,7 @@ export default {
 };
 </script>
   
-<style scoped lang="scss">
-.hello {
-  background-color: #ffe28a;
-  height: 400px;
-  width: 50%;
-  padding: 10px;
+<style scoped>
 
-  display: inline-block;
-  color: black;
-}
-h3 {
-  margin: 40px 0 0;
-}
-
-a {
-  color: #42b983;
-}
 </style>
   
