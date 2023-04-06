@@ -4,7 +4,7 @@
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-col text-center w-full mb-20">
             <strong class="dd1"><b><h1>OUR TEAM</h1></b></strong>
-            <p class="dd2"><h2>visit all mentors</h2></p>
+            <p><h2 class="dd2">visit all mentors</h2></p>
           </div>
           </div>
     </section>
@@ -152,6 +152,12 @@ export default {
 }
 .text:hover{
     color:cadetblue;
+}
+.dd1{
+    color: white;
+}
+.dd2{
+    color: white;
 }
 
 </style>
