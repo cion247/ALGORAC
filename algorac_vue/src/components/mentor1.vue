@@ -1,5 +1,6 @@
 <template>
-    
+  <section id="how" style="margin-top: 2rem;">
+    <div id="instructions" class="columns is-hidden-mobile">
     <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-col text-center w-full mb-20">
@@ -7,6 +8,9 @@
             <p><h2 class="dd2">visit all mentors</h2></p>
           </div>
           </div>
+          </section>
+        </div>
+        
     </section>
   
     <body>
@@ -159,5 +163,7 @@ export default {
 .dd2{
     color: white;
 }
-
+#instructions{
+  color:black;
+}
 </style>
