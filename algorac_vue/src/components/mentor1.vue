@@ -124,14 +124,14 @@ export default {
 }
 .reg1{
   border: 3px solid;
-  bordercolor: white;
+  border-color: white;
   width: 420px;
   height: 260px;
 
 }
 .reg2{
   border: 3px solid;
-  bordercolor: white;
+  border-color: white;
   width: 421px;
   height: 261px;
 }
