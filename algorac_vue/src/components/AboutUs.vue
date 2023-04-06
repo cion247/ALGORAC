@@ -65,7 +65,7 @@ export default {
 <style scoped lang="scss">
 .hello {
   background-color: #306983;
-  height: 400px;
+  height: 900px;
   width: 100%;
   padding: 10px;
 
