@@ -2,7 +2,6 @@
 <div class="container shadow-2xl border-6 rounded-lg mx-auto my-20 w-1/3 border border-gray-950 bg-white flex min-h-full items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
   <div class="w-full max-w-md space-y-8">
     <div>
-        <img class="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=gray&shade=950" alt="Your Company">
       <h2 class="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">Login to ALGORAC</h2>
     </div>
     <form class="mt-8 space-y-6" action="#" method="POST">
