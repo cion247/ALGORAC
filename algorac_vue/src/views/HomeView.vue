@@ -23,7 +23,6 @@
     </section>
 
     <gallery />
-    <mentor1/>
     <AboutUs />
     
     <Footer />
@@ -36,7 +35,6 @@ import NoticeBoard from "@/components/NoticeBoard.vue";
 import Gallery from "@/components/Gallery.vue";
 import AboutUs from "@/components/AboutUs.vue";
 import NavBar from "@/components/NavBar.vue";
-import mentor1 from"@/components/mentor1.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
@@ -49,7 +47,6 @@ export default {
     Gallery,
     AboutUs,
     NavBar,
-    mentor1,
     Footer,
     
   },
