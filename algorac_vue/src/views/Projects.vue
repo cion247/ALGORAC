@@ -9,7 +9,6 @@ export default {
   name: "Projects",
   data() {},
   components: {
-    Projects ,
   },
 };
 </script>
