@@ -6,20 +6,33 @@
 
 @layer utilities {
     ::-webkit-scrollbar {
-        width: 12px;
+        width: 10px;
         height: 10px;
     }
 
     ::-webkit-scrollbar-track {
-        border-radius: 50vh;
-        background: #cae000d0;
+        /* border-radius: 100vh; */
+        background: #0b0d0c;
+        /* margin-block: .5em; */
+    }
+
+    .scrollbar_track::-webkit-scrollbar-track {
+        border-radius: 100vh;
+        background: #0b0d0c;
+        margin-block: .5em;
+
     }
 
     ::-webkit-scrollbar-thumb {
-        background: #c99c9c;
+        background: #6ec02b;
         border-radius: 100vh;
-        border: 1px solid #f6f7ed;
+        border: 1px solid #0b0d0c;
     }
 
-
+    @supports (scrollbar-color: red blue) {
+        * {
+            scrollbar-color: #6ec02b #0b0d0c;
+            scrollbar-width: thin;
+        }
+    }
 }
