@@ -2,6 +2,7 @@
   <div class="font-mono w-full h-full bg-one bg-fixed bg-cover">
     <NavBar />
 
+
     <section class="text-gray-50 body-font">
       <div class="container mx-auto flex p-5 md:flex-row flex-col items-center">
         <div
@@ -10,6 +11,7 @@
           <h1
             class="title-font sm:text-4xl text-8xl mb-4 font-medium text-red-50"
           >
+
             ALGORAC <br class="hidden lg:inline-block" />coding club
           </h1>
           <p class="mb-8 leading-relaxed text-xl font-semibold">
@@ -20,10 +22,12 @@
         <NoticeBoard />
       </div>
 
+
       <Gallery />
       <AboutUs />
       <Footer />
     </section>
+
   </div>
 </template>
 
@@ -45,8 +49,11 @@ export default {
     AboutUs,
     NavBar,
     Footer,
+    
   },
 
   methods: {},
 };
 </script>
+
+
