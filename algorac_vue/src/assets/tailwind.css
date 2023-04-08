@@ -5,17 +5,17 @@
 @tailwind utilities;
 
 @layer utilities {
-    .scrollbar::-webkit-scrollbar {
-        width: 10px;
+    ::-webkit-scrollbar {
+        width: 12px;
         height: 10px;
     }
 
-    .scrollbar::-webkit-scrollbar-track {
-        border-radius: 100vh;
-        background: #f6f7ed;
+    ::-webkit-scrollbar-track {
+        border-radius: 50vh;
+        background: #cae000d0;
     }
 
-    .scrollbar::-webkit-scrollbar-thumb {
+    ::-webkit-scrollbar-thumb {
         background: #c99c9c;
         border-radius: 100vh;
         border: 1px solid #f6f7ed;
