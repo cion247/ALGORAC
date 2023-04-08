@@ -10,7 +10,7 @@
       </a>
     </div>
     <div
-      class="container bg-slate-200 backdrop-blur-xl flex flex-wrap p-5 ml-auto flex-row items-center w-1/5 lg:w-96 rounded-lg"
+      class="container bg-slate-200 flex flex-wrap p-5 ml-auto flex-row items-center w-1/5 lg:w-96 rounded-lg"
     >
       <nav
         class="md:ml-auto flex flex-wrap place-items-start text-xl font-bold justify-start"
