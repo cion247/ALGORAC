@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import Projects from "../views/Projects.vue";
 import Login from "../views/Login.vue";
-import Mentors from "../views/Mentors.vue"
+import Mentors from "../views/Mentors.vue";
 
 
 const routes = [
@@ -14,19 +14,22 @@ const routes = [
   {
     path: "/projects",
     name: "projects",
-    component: Projects,
+    component: () =>
+    import(/* webpackChunkName: "about" */ "../views/Projects.vue"),
   },
   {
     path: "/login",
     name: "Login",
-    component: Login,
+    component: () =>
+    import(/* webpackChunkName: "about" */ "../views/Login.vue")
 
   },
   {
     path: "/mentors",
     name: "Mentors",
 
-    component: Mentors,
+    component: () =>
+    import(/* webpackChunkName: "about" */ "../views/Mentors.vue"),
   },
   {
     path: "/about",
