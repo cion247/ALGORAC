@@ -1,6 +1,6 @@
 <template>
   <div
-    class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 bg-slate-200 rounded-lg my-8 h-96 border-4 text-stone-900 p-2 overflow-auto scrollbar_track"
+    class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 bg-slate-200 rounded-lg my-8 h-96 border-1 text-stone-900 p-2 overflow-auto"
   >
     <h1
       class="title-font sm:text-4xl text-3xl mb-1 font-normal text-stone-900 text-center rounded-xl p-1"
