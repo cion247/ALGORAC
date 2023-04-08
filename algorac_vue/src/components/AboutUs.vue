@@ -9,13 +9,8 @@
         <div class="grid grid-cols-2 gap-5">
           <input
             type="text"
-            class="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500"
-            placeholder="First Name"
-          />
-          <input
-            type="text"
-            class="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500"
-            placeholder="Last Name"
+            class="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 col-span-2"
+            placeholder="Full Name"
           />
           <input
             type="email"
