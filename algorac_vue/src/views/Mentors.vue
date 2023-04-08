@@ -149,6 +149,14 @@
 .t11{
 color: white;
 }
+
+
+.eo2{
+    background-color: rgb(0,0,0);
+}
+.underline-header img {
+    width: 110vw;
+  }
   </style>
 <script>
  export default {
