@@ -1,2 +1,0 @@
-algorac_vue/main.js line 7 # axios.defaults.baseURL = 'https://reqres.in/'
-the url we are pulling the api form
