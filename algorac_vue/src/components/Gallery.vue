@@ -2,7 +2,7 @@
   <section class="overflow-hidden text-neutral-700">
     <div class="flex flex-col text-center w-full mb-20">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Gallery</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatewe done a glims.</p>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">glimpses of pride</p>
     </div>
     <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
       <div class="-m-1 flex flex-wrap md:-m-2">
