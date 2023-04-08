@@ -3,7 +3,7 @@
     <div
       class="container flex flex-1 w-1/3 my-auto flex-col justify-self-center items-start text-sm p-5 content-center"
     >
-      <h1 class="flex justify-center w-2/5">CONNECT WITH US ON</h1>
+      <h1 class="flex justify-start w-2/5">CONNECT WITH US ON</h1>
       <div class="flex justify-start w-full flex-1">
         <div class="py-2">
           <a
@@ -68,7 +68,7 @@
       </div>
     </div>
     <div class="mb-4 w-1/3">
-      <div class="mb-4">ALGORAC</div>
+      <div class="mb-4"></div>
       <p class="mb-4 leading-normal">
         ICFAI TRIPURA UNIVERSITY<br />
         Kamalghat, Mohanpur<br />

@@ -7,9 +7,6 @@ module.exports = {
         'one': "url('/src/assets/backG3.jpeg')"
       }
 
-    },
-    plugins: [
-      require('tailwind-scrollbar'),
-    ],
+    }
   }
 }
