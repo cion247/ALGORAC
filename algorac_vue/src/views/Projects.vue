@@ -1,5 +1,11 @@
 <template>
-  <NavBar/>
+     <nav class="flex fixed w-screen justify-center bg-gray-900 text-white w-screen">
+      <div class="px-5 xl:px-12 py-6 items-center text-center">
+        <a class="text-3xl font-bold font-heading">
+          PROJECTS
+        </a>
+      </div>
+    </nav>
 <div class="text-gray-900 pt-12 pr-0 pb-14 pl-0 bg-white">
   <div class="w-full pt-4 pr-5 pb-6 pl-5 mt-0 mr-auto mb-0 ml-auto space-y-5 sm:py-8 md:py-12 sm:space-y-8 md:space-y-16
       max-w-7xl">
@@ -81,14 +87,12 @@
   <Footer />
 </template>
 <script>
-import NavBar from"@/components/NavBar.vue";
 import Footer from "@/components/Footer.vue";
 export default {
   name: "Projects",
   data() {},
   components: {
     Footer,
-    NavBar,
 
   },
 };
