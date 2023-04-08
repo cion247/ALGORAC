@@ -1,10 +1,8 @@
 <template>
-  <section
-    class="font-mono w-full h-full bg-one bg-fixed bg-cover text-white bg-center"
-  >
+  <section class="font-mono w-full h-full bg-one bg-fixed bg-cover">
     <NavBar />
     <div class="text-center pb-12">
-      <h2 class="text-base font-bold">|| OUR MENTORS IN ||</h2>
+      <h2 class="text-base font-bold text-indigo-50">|| OUR MENTORS IN ||</h2>
       <div>
         <h1
           class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900"
@@ -13,14 +11,16 @@
         </h1>
       </div>
     </div>
-
+    <div>
+    <img src="/assets/image1.png" alt="">
+  </div>
     <br />
 
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3"
     >
-      <div
-        class="w-full bg-white bg-opacity-40 backdrop-blur m-4 rounded-lg p-12 flex max-w-md mx-auto flex-col justify-center items-center"
+      <div 
+        class="w-full bg-white background-shadow-black bg-opacity-40 backdrop-blur m-4 rounded-lg p-12 flex max-w-md mx-auto flex-col justify-center items-center"
       >
         <div class="mb-8">
           <img
