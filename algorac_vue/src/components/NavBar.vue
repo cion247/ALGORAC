@@ -28,7 +28,7 @@
         <nav
           class="md:ml-auto flex flex-wrap items-center text-base justify-center"
         >
-          <a href="/projects" class="mr-5 hover:text-gray-900">Projects</a>
+          <a href="/projects" target="_blank" class="mr-5 hover:text-gray-900">Projects</a>
           <a class="mr-5 hover:text-gray-900">Mentors</a>
         </nav>
         <button
