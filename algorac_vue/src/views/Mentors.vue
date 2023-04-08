@@ -2,30 +2,23 @@
   <section class="font-mono w-full h-full bg-one bg-fixed bg-cover">
     <NavBar />
     <div class="text-center pb-12">
-      <h2 class="text-base font-bold text-indigo-600">
-        <h1 class="tt2">
-          <b><b class="t11">||</b>OUR MENTORS<b class="t11">||</b></b>
-        </h1>
-      </h2>
+      <h2 class="text-base font-bold text-indigo-50">|| OUR MENTORS IN ||</h2>
       <div>
         <h1
           class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900"
         >
-          <strong id="tt1"> ALGORAC </strong>
+          <strong class="text-white"> ALGORAC </strong>
         </h1>
-      </div>
-      <div id="es1">
-        <div class="underline-header"></div>
       </div>
     </div>
 
     <br />
 
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3"
     >
       <div
-        class="w-full bg-white bg-opacity-40 backdrop-blur m-4 rounded-lg p-12 flex flex-col justify-center items-center"
+        class="w-full bg-white bg-opacity-40 backdrop-blur m-4 rounded-lg p-12 flex max-w-md mx-auto flex-col justify-center items-center"
       >
         <div class="mb-8">
           <img
@@ -41,7 +34,7 @@
         </div>
       </div>
       <div
-        class="w-full bg-white bg-opacity-40 backdrop-blur m-4 rounded-lg p-12 flex flex-col justify-center items-center"
+        class="w-full bg-white bg-opacity-40 backdrop-blur m-4 rounded-lg p-12 flex max-w-md mx-auto flex-col justify-center items-center"
       >
         <div class="mb-8">
           <img
@@ -56,7 +49,7 @@
         </div>
       </div>
       <div
-        class="w-full bg-white bg-opacity-40 backdrop-blur m-4 rounded-lg p-12 flex flex-col justify-center items-center"
+        class="w-full bg-white bg-opacity-40 backdrop-blur m-4 rounded-lg p-12 flex max-w-md mx-auto flex-col justify-center items-center"
       >
         <div class="mb-8">
           <img
@@ -71,7 +64,7 @@
         </div>
       </div>
       <div
-        class="w-full bg-white bg-opacity-40 backdrop-blur m-4 rounded-lg p-12 flex flex-col justify-center items-center"
+        class="w-full bg-white bg-opacity-40 backdrop-blur m-4 rounded-lg p-12 flex max-w-md mx-auto flex-col justify-center items-center"
       >
         <div class="mb-8">
           <img
@@ -87,7 +80,7 @@
         </div>
       </div>
       <div
-        class="w-full bg-white bg-opacity-40 backdrop-blur m-4 rounded-lg p-12 flex flex-col justify-center items-center"
+        class="w-full bg-white bg-opacity-40 backdrop-blur m-4 rounded-lg p-12 flex max-w-md mx-auto flex-col justify-center items-center"
       >
         <div class="mb-8">
           <img
@@ -102,7 +95,7 @@
         </div>
       </div>
       <div
-        class="w-full bg-white bg-opacity-40 backdrop-blur m-4 rounded-lg p-12 flex flex-col justify-center items-center"
+        class="w-full bg-white bg-opacity-40 backdrop-blur m-4 rounded-lg p-12 flex max-w-md mx-auto flex-col justify-center items-center"
       >
         <div class="mb-8">
           <img
@@ -121,36 +114,6 @@
   </section>
 </template>
 
-<style>
-#tt1 {
-  color: white;
-  text-shadow: 0pxx 0px 5px gray, 0px 0px 0px black;
-}
-.tt2 {
-  color: blue;
-}
-.tt2:hover {
-  color: gray;
-}
-.underline-header {
-  background-color: rgb(0, 0, 0);
-  transform: translateX(50px -50px);
-  min-width: 600px;
-}
-.rr7 {
-  color: white;
-}
-.t11 {
-  color: white;
-}
-
-.eo2 {
-  background-color: rgb(0, 0, 0);
-}
-.underline-header img {
-  width: 110vw;
-}
-</style>
 <script>
 import NavBar from "@/components/NavBar.vue";
 import Footer from "@/components/Footer.vue";
