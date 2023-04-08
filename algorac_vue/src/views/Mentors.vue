@@ -1,8 +1,10 @@
 <template>
-  <section class="font-mono w-full h-full bg-one bg-fixed bg-cover">
+  <section
+    class="font-mono w-full h-full bg-one bg-fixed bg-cover text-white bg-center"
+  >
     <NavBar />
     <div class="text-center pb-12">
-      <h2 class="text-base font-bold text-indigo-50">|| OUR MENTORS IN ||</h2>
+      <h2 class="text-base font-bold">|| OUR MENTORS IN ||</h2>
       <div>
         <h1
           class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900"
