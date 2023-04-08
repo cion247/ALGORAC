@@ -5,15 +5,6 @@
     <div
       class="flex flex-wrap p-5 flex-row items-center justify-items-center w-32 rounded-lg"
     >
-      <a
-        href="/"
-        class="flex title-font font-medium items-center text-gray-900 mb-4 mx-auto"
-      >
-      </a>
-    </div>
-    <div
-      class="flex flex-wrap p-5 flex-row items-center justify-items-center w-32 rounded-lg"
-    >
       <a href="/" class="flex title-font items-center text-white mb-4 mx-auto">
         <span class="text-4xl font-black">ALGORAC</span>
       </a>
