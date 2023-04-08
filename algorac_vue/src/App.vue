@@ -1,5 +1,5 @@
 <template>
-  <router-view class="scrollbar" />
+  <router-view />
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="font-mono w-full h-full bg-one bg-fixed">
+  <div class="font-mono w-full h-full bg-one bg-fixed bg-cover">
     <NavBar />
 
     <section class="text-gray-50 body-font">
