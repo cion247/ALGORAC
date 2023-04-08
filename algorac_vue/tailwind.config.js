@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'one': "url('/src/assets/backG3.jpeg')"
+        'one': "url('/src/assets/layered-waves-haikei (3).svg')"
       }
 
     },
