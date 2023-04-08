@@ -1,9 +1,5 @@
 <template>
-  <div id="wrapper">
-    <section class="section">
-      <router-view />
-    </section>
-  </div>
+  <router-view />
 </template>
 
 <script>
@@ -16,9 +12,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.footer {
-  background-color: #25250e;
-  height: 10px;
-}
-</style>
+

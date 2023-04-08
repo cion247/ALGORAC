@@ -3,8 +3,13 @@ module.exports = {
   content: ['./public/**/*.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      backgroundImage: {
+        'one': "url('/src/assets/backG3.jpeg')"
+      }
 
     },
-    plugins: [],
+    plugins: [
+      require('tailwind-scrollbar'),
+    ],
   }
 }

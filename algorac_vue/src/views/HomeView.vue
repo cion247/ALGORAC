@@ -1,14 +1,14 @@
 <template>
-  <div class="font-mono backdrop-blur">
+  <div class="font-mono w-full h-full bg-one bg-fixed">
     <NavBar />
 
-    <section class="text-gray-600 body-font">
+    <section class="text-gray-50 body-font">
       <div class="container mx-auto flex p-5 md:flex-row flex-col items-center">
         <div
           class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
         >
           <h1
-            class="title-font sm:text-4xl text-8xl mb-4 font-medium text-gray-900"
+            class="title-font sm:text-4xl text-8xl mb-4 font-medium text-red-50"
           >
             ALGORAC <br class="hidden lg:inline-block" />coding club
           </h1>
@@ -19,11 +19,11 @@
         </div>
         <NoticeBoard />
       </div>
-    </section>
 
-    <gallery />
-    <AboutUs />
-    <Footer />
+      <Gallery />
+      <AboutUs />
+      <Footer />
+    </section>
   </div>
 </template>
 
@@ -50,13 +50,3 @@ export default {
   methods: {},
 };
 </script>
-
-<style scoped>
-.intro {
-  height: 400px;
-  display: inline-block;
-  width: 50%;
-  padding: 10px;
-  color: rgb(0, 0, 0);
-}
-</style>

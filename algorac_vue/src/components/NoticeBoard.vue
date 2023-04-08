@@ -1,25 +1,24 @@
 <template>
   <div
-    class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 bg-amber-200 rounded-lg my-8 h-96 border-4 text-stone-900 p-2 overflow-auto"
+    class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 bg-slate-200 rounded-lg my-8 h-96 border-4 text-stone-900 p-2 overflow-auto scroll-m-2"
   >
     <h1
-      class="title-font sm:text-4xl text-3xl mb-4 bg-amber-400 font-normal text-stone-900 text-center rounded-xl p-2"
+      class="title-font sm:text-4xl text-3xl mb-1 font-normal text-stone-900 text-center rounded-xl p-1"
     >
       notice_board
     </h1>
 
-    <div class="flex flex-wrap m-2">
+    <div class="flex flex-wrap flex-col">
       <!-- notices -->
       <div
-        class="p-2 xl:w-1/4 md:w-1/2 w-full"
+        class="p-1 flex-1 flex"
         v-for="notice in this.latestNotices"
         v-bind:key="notice.id"
       >
-        <div
-          class="h-full p-3 rounded-lg border-2 border-amber-500 flex flex-col relative overflow-hidden"
-        >
-          <h1>{{ notice.topic }}</h1>
+        <div class="p-1 rounded-lg flex flex-col text-lg break-words grow">
+          <h1 class="font-bold">{{ notice.topic }}</h1>
           <h1>{{ notice.description }}</h1>
+          <h1>------------------------------</h1>
         </div>
       </div>
     </div>
@@ -45,8 +44,6 @@ export default {
         .get("/api/v1/notices-latest/")
         .then((response) => {
           this.latestNotices = response.data;
-          console.log(this.latestNotices);
-          console.log(this.latestNotices.topic);
         })
         .catch((error) => {
           console.log(error);
@@ -55,7 +52,5 @@ export default {
   },
 };
 </script>
-  
-<style scoped>
-</style>
+
   
