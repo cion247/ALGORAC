@@ -1,13 +1,26 @@
 
-<template>
-  <div>
-    <header class="text-gray-600 body-font">
-      <div
-        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+<template >
+  <header
+    class="sticky top-0 text-gray-50 z-40 backdrop-blur drop-shadow-lg container mx-auto border-transparent border-8 flex flex-row p-5"
+  >
+    <div
+      class="flex flex-wrap p-5 flex-row items-center justify-items-center w-32 rounded-lg"
+    >
+      <a
+        href="/"
+        class="flex title-font font-medium items-center text-gray-900 mb-4 mx-auto"
       >
-        <a
-          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
-        >
+        <span class="text-4xl font-black">ALGORAC</span>
+      </a>
+    </div>
+    <div
+      class="container bg-sky-800 flex flex-wrap p-5 ml-auto flex-row items-center w-1/5 lg:w-96 rounded-lg"
+    >
+      <nav
+        class="md:ml-auto flex flex-wrap place-items-start text-xl font-medium justify-start"
+      >
+        <a href="/about" class="m-2 hover:underline underline-offset-8"
+          >about</a>
           <span class="ml-3 text-xl">ALGORAC</span>
         </a>
         <nav

@@ -11,7 +11,7 @@ from .serializers import GallerySerializer, MentorSerializer, NoticeSerializer, 
 
 class LatestNoticelistView(APIView):
     def get(self, request, format=None):
-        notices = list(Notice.objects.all()[0:3])
+        notices = list(Notice.objects.all()[0:7])
         if not notices:
             return Response({'message': 'No data found'})
         serializer = NoticeSerializer(notices, many=True)
@@ -73,9 +73,9 @@ class MessagesView(APIView):
 
 
 class MentorView(APIView):
-    def post(self, request, format = None):
+    def post(self, request, format=None):
         mentor = Mentor.objects.all()
         if not mentor:
             return Response({'message': 'No data found'})
-        serializer = MentorSerializer(mentor, many = True)
+        serializer = MentorSerializer(mentor, many=True)
         return Response(serializer.data)
