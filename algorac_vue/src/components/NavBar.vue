@@ -2,14 +2,11 @@
 <template >
   <header
     class="sticky top-0 text-gray-50 z-40 backdrop-blur drop-shadow-lg container mx-auto border-transparent border-8 flex flex-row p-5"
-  >
-    <div
-      class="flex flex-wrap p-5 flex-row items-center justify-items-center w-32 rounded-lg"
     >
-      <a
-        href="/"
-        class="flex title-font font-medium items-center text-gray-900 mb-4 mx-auto"
-      >
+    <div
+     class="flex flex-wrap p-5 flex-row items-center justify-items-center w-32 rounded-lg"
+     >
+      <a href="/" class="flex title-font font-medium items-center text-gray-900 mb-4 mx-auto">
         <span class="text-4xl font-black">ALGORAC</span>
       </a>
     </div>
@@ -19,10 +16,10 @@
       <nav
         class="md:ml-auto flex flex-wrap place-items-start text-xl font-medium justify-start"
       >
-        <a href="/about" class="m-2 hover:underline underline-offset-8"
-          >about</a>
-          <span class="ml-3 text-xl">ALGORAC</span>
+        <a href="/about" class="mr-5 hover:text-gray-900">
+          About
         </a>
+      </nav>
         <nav
           class="md:ml-auto flex flex-wrap items-center text-base justify-center"
         >
@@ -30,9 +27,9 @@
           <a class="mr-5 hover:text-gray-900">Mentors</a>
         </nav>
         <button
-          class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
+          class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-black mt-4 md:mt-0"
         >
-          Login
+          <a href="/login">Login</a>
           <svg
             fill="none"
             stroke="currentColor"
@@ -45,9 +42,8 @@
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
         </button>
-      </div>
-    </header>
-  </div>
+    </div>
+  </header> 
 </template>
 <script> 
 export default {
