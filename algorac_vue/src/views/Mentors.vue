@@ -1,6 +1,9 @@
 <template>
   <section class="font-mono w-full h-full bg-one bg-fixed bg-cover">
     <NavBar />
+    <br/>
+    <br/>
+    <br/>
     <div class="text-center pb-12">
       <h2 class="text-base font-bold text-indigo-50">|| OUR MENTORS IN ||</h2>
       <div>
@@ -11,9 +14,10 @@
         </h1>
       </div>
     </div>
-    <div>
-    <img src="assets/image vue.png" alt="">
-  </div>
+
+    <img src="../assets/head.png" class="mx-auto" />
+
+<br/>
     <br />
 
     <div

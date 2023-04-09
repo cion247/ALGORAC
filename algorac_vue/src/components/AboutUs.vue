@@ -1,4 +1,28 @@
 <template>
+  
+  <div class="font-mono w-full h-full bg-one bg-fixed bg-cover bg-center">
+		<div class="container mx-auto text-left text-white">
+			<div class="flex items-center">
+				<div class="w-1/2">
+					<h1 class="text-5xl font-medium mb-6">ABOUT US</h1>
+					<p class="text-xl mb-12"><strong>ALGORAC</strong> Coding Club is an ingrain part of ICFAI UNIVERSITY TRIPURA(IUT), a private university located at Agartala, Tripura, India.
+            <br>
+            ALGORAC is the perfect platform for all techies who are inquisitive and diligent about tackling real life problem with the aid of programming. The club focuses on
+              <i>
+                <b className="purple"> Competitive programming, Web Dev, App Dev, </b> 
+              </i> and various other aspects of programming.
+            <br>
+            <strong>ALGORAC </strong>strives to inculcate and foster the culture of programming and to create a healthy programming environment in the campus. It aims to create an environment which proliferate quantity and quality of programmers irrespective of their respective engineering discipline.  
+            </p>
+					<a class="bg-gray-500 text-white py-4 px-12 rounded-full hover:bg-white-600"><i>ALGORAC believes in coding the problems away.</i></a>
+				</div>
+				<div class="w-1/2 pl-16">
+					<img src="https://source.unsplash.com/random?coding" class="h-64 w-full object-cover rounded-xl" alt="Layout Image">
+      </div>
+				</div>
+			</div>
+  </div>
+
   <div
     class="container shadow-2xl border-6 rounded-lg mx-auto my-20 w-1/3 border border-orange-500 bg-white"
   >
