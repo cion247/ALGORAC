@@ -1,7 +1,9 @@
 <template>
-<div class="text-gray-900 pt-12 pr-0 pb-14 pl-0 bg-white">
+<NavBar/>
+<div class="font-mono w-full h-full bg-one bg-fixed bg-cover text-white bg-center">
   <div class="w-full pt-4 pr-5 pb-6 pl-5 mt-0 mr-auto mb-0 ml-auto space-y-5 sm:py-8 md:py-12 sm:space-y-8 md:space-y-16
       max-w-7xl">
+
     <div class="flex flex-col items-center sm:px-5 md:flex-row">
       <div class="flex flex-col items-start justify-center w-full h-full pt-6 pr-0 pb-6 pl-0 mb-6 md:mb-0 md:w-1/2">
         <div class="flex flex-col items-start justify-center h-full space-y-3 transform md:pr-10 lg:pr-16
@@ -18,12 +20,7 @@
             <p class="inline text-xs font-medium">projects</p>
           </div>
           <a class="text-4x1 font-bold leading-none lg:text-5xl xl:text-6xl">Projects handled under ALGORAC.</a>
-          <div class="pt-2 pr-0 pb-0 pl-0">
-            <p class="text-sm font-medium inline">By:</p>
-            <a class="inline text-sm font-medium mt-0 mr-1 mb-0 ml-1 underline">ALGORAC</a>
-            <p class="inline text-sm font-medium mt-0 mr-1 mb-0 ml-1">· DD/MM/YYYY ·</p>
-            <p class="text-gray-200 text-sm font-medium inline mt-0 mr-1 mb-0 ml-1"> click on the LINK for further details,this will added later on</p>
-          </div>
+          <div class="pt-2 pr-0 pb-0 pl-0"></div>
         </div>
       </div>
       <div class="w-full md:w-1/2">
@@ -43,9 +40,10 @@
         <p class="text-sm text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
         <div class="pt-2 pr-0 pb-0 pl-0">
+          <p class="text-sm font-medium inline">By: </p>
           <a class="inline text-xs font-medium mt-0 mr-1 mb-0 ml-0 underline">ALGORAC</a>
           <p class="inline text-xs font-medium mt-0 mr-1 mb-0 ml-1">· DD/MM/YYYY ·</p>
-          <p class="inline text-xs font-medium text-gray-300 mt-0 mr-1 mb-0 ml-1">""</p>
+
         </div>
       </div>
       <div class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
@@ -57,9 +55,10 @@
         <p class="text-sm text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
         <div class="pt-2 pr-0 pb-0 pl-0">
+          <p class="text-sm font-medium inline">By: </p>
           <a class="inline text-xs font-medium mt-0 mr-1 mb-0 ml-0 underline">ALGORAC</a>
           <p class="inline text-xs font-medium mt-0 mr-1 mb-0 ml-1">· DD/MM/YYYY ·</p>
-          <p class="inline text-xs font-medium text-gray-300 mt-0 mr-1 mb-0 ml-1">""</p>
+
         </div>
       </div>
       <div class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
@@ -71,25 +70,29 @@
         <p class="text-sm text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
         <div class="pt-2 pr-0 pb-0 pl-0">
+          <p class="text-sm font-medium inline">By: </p>
           <a class="inline text-xs font-medium mt-0 mr-1 mb-0 ml-0 underline">ALGORAC</a>
           <p class="inline text-xs font-medium mt-0 mr-1 mb-0 ml-1">· DD/MM/YYYY ·</p>
-          <p class="inline text-xs font-medium text-gray-300 mt-0 mr-1 mb-0 ml-1">""</p>
+
         </div>
       </div>
     </div>
   </div>
   </div>
 
-
-
+  <Footer />
 </template>
-
-
 <script>
+import NavBar from "@/components/NavBar.vue";
+import Footer from "@/components/Footer.vue";
 export default {
   name: "Projects",
   data() {},
   components: {
+    NavBar,
+    Footer,
+
+
   },
 };
 </script>
