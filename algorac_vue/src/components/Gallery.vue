@@ -1,72 +1,73 @@
-<template>
-  <section class="body-font text-white">
-    <div class="container px-5 py-24 mx-auto flex flex-wrap">
-      <div class="flex w-full mb-20 flex-wrap">
-        <h1
-          class="sm:text-3xl text-2xl font-medium title-font lg:w-1/3 lg:mb-0 mb-4"
-        >
-          Master Cleanse Reliac Heirloom
-        </h1>
-        <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">
-          Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-          gentrify, subway tile poke farm-to-table. Franzen you probably haven't
-          heard of them man bun deep jianbing selfies heirloom.
-        </p>
-      </div>
-      <div class="flex flex-wrap md:-m-2 -m-1">
-        <div class="flex flex-wrap w-1/2">
-          <div class="md:p-2 p-1 w-1/2">
-            <img
-              alt="gallery"
-              class="w-full object-cover h-full object-center block rounded-lg"
-              src="../assets/prj_1.svg"
-            />
-          </div>
-          <div class="md:p-2 p-1 w-1/2">
-            <img
-              alt="gallery"
-              class="w-full object-cover h-full object-center block"
-              src="../assets/prj_2.svg"
-            />
-          </div>
-          <div class="md:p-2 p-1 w-full">
-            <img
-              alt="gallery"
-              class="w-full h-full object-cover object-center block rounded-lg"
-              src="../assets/prj_3.svg"
-            />
-          </div>
-        </div>
-        <div class="flex flex-wrap w-1/2">
-          <div class="md:p-2 p-1 w-full">
-            <img
-              alt="gallery"
-              class="w-full h-full object-cover object-center block rounded-lg"
-              src="../assets/prj_1.svg"
-            />
-          </div>
-          <div class="md:p-2 p-1 w-1/2">
-            <img
-              alt="gallery"
-              class="w-full object-cover h-full object-center block"
-              src="../assets/prj_2.svg"
-            />
-          </div>
-          <div class="md:p-2 p-1 w-1/2">
-            <img
-              alt="gallery"
-              class="w-full object-cover h-full object-center block rounded-lg"
-              src="../assets/prj_3.svg"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</template>
 
+<template>
+  <div
+    class="container mx-auto flex p-5 items-center border rounded-full h-fill"
+  >
+    <swiper
+      :spaceBetween="30"
+      :centeredSlides="true"
+      :autoplay="{
+        delay: 2500,
+        disableOnInteraction: false,
+      }"
+      :pagination="{
+        clickable: true,
+      }"
+      :navigation="true"
+      :modules="modules"
+      class="mySwiper"
+    >
+      <swiper-slide>
+        <img
+          className="object-cover w-full  holo rounded-3xl"
+          src="../assets/prj_1.svg"
+          alt="image slide 1"
+        />
+      </swiper-slide>
+      <swiper-slide>
+        <img
+          className="object-cover w-full holo rounded-3xl"
+          src="../assets/prj_2.svg"
+          alt="image slide 2"
+        />
+      </swiper-slide>
+      <swiper-slide>
+        <img
+          className="object-cover w-full holo rounded-3xl"
+          src="../assets/prj_3.svg"
+          alt="image slide 3"
+        />
+      </swiper-slide>
+    </swiper>
+  </div>
+</template>
 <script>
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from "swiper/vue";
+
+// Import Swiper styles
+import "swiper/css";
+
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper";
+
 export default {
-  name: "Gallery",
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [Autoplay, Pagination, Navigation],
+    };
+  },
 };
 </script>
+<style scoped>
+.holo {
+  height: 35rem;
+}
+</style>
