@@ -12,7 +12,7 @@
       </div>
     </div>
     <div>
-    <img src="" alt="">
+    <img src="assets/image vue.png" alt="">
   </div>
     <br />
 
