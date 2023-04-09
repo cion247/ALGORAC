@@ -21,6 +21,7 @@
       </div>
 
       <Gallery />
+      <Carousel />
       <AboutUs />
       <Footer />
     </section>
@@ -33,6 +34,7 @@ import Gallery from "@/components/Gallery.vue";
 import AboutUs from "@/components/AboutUs.vue";
 import NavBar from "@/components/NavBar.vue";
 import Footer from "@/components/Footer.vue";
+import Carousel from "@/components/Carousel.vue";
 
 export default {
   name: "Home",
@@ -45,6 +47,7 @@ export default {
     AboutUs,
     NavBar,
     Footer,
+    Carousel,
   },
 
   methods: {},

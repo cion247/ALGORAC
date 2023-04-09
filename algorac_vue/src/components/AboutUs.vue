@@ -24,11 +24,10 @@
             the campus. It aims to create an environment which proliferate
             quantity and quality of programmers irrespective of their respective
             engineering discipline.
+            <br>
+            <br>
+            <strong><i>"ALGORAC believes in coding the problems away."</i></strong>
           </p>
-          <a
-            class="bg-gray-500 text-white py-4 px-12 rounded-full hover:bg-white-600"
-            ><i>ALGORAC believes in coding the problems away.</i></a
-          >
         </div>
         <div class="w-1/2 px-2">
           <div
