@@ -149,9 +149,9 @@ export default {
 .card {
   border: 50px;
   margin: 50px;
-  box-shadow: 5px 5px 20px gray;
+  box-shadow: 10px 10px 10px gray;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 12px;
   transition: 0.9s;
 }
 .card:hover {
