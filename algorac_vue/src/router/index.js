@@ -14,19 +14,22 @@ const routes = [
   {
     path: "/projects",
     name: "projects",
-    component: Projects,
+    component: () =>
+      import("../views/Projects.vue"),
   },
   {
     path: "/login",
     name: "Login",
-    component: Login,
+    component: () =>
+      import("../views/Login.vue"),
 
   },
   {
     path: "/mentors",
     name: "Mentors",
 
-    component: Mentors,
+    component: () =>
+      import("../views/Mentors.vue"),
   },
   {
     path: "/about",
