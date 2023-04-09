@@ -13,6 +13,7 @@
         </h1>
       </div>
     </div>
+    <img src="../assets/head.png" class="mx-auto" />
 
     <br />
 
