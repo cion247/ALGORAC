@@ -13,17 +13,14 @@
       class="container bg-slate-200 flex flex-wrap p-5 ml-auto flex-row items-center w-1/5 lg:w-96 rounded-lg"
     >
       <nav
-        class="md:ml-auto flex flex-wrap place-items-start text-xl font-bold justify-start"
+        class="md:ml-auto flex flex-wrap mx-auto items-center text-base justify-center"
       >
-        <a href="/about" class="mr-5 hover:text-gray-900"> About </a>
-      </nav>
-      <nav
-        class="md:ml-auto flex flex-wrap items-center text-base justify-center"
-      >
-        <a href="/projects" class="mr-5 hover:text-gray-900"
+        <a href="/projects" class="mr-5 text-xl font-bold hover:text-gray-900"
           >Projects</a
         >
-        <a href="/mentors" class="mr-5 hover:text-gray-900">Mentors</a>
+        <a href="/mentors" class="mr-5 text-xl font-bold hover:text-gray-900"
+          >Mentors</a
+        >
       </nav>
       <button
         class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-black mt-4 md:mt-0"

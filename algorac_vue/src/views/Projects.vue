@@ -41,9 +41,7 @@
         </div>
         <div class="w-full md:w-1/2">
           <div class="block">
-            <img
-              src="https://www.atees.org/blog/wp-content/uploads/2019/06/shutterstock-1199480788.png"
-            />
+            <img src="../assets/prj_1.svg" />
           </div>
         </div>
       </div>
@@ -51,9 +49,7 @@
         <div
           class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4"
         >
-          <img
-            src="https://s3.studytonight.com/curious/uploads/pictures/1634120725-79542.png"
-          />
+          <img src="../assets/prj_1.svg" />
           <p
             class="bg-green-500 flex items-center leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase inline-block"
           >
@@ -78,9 +74,7 @@
         <div
           class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4"
         >
-          <img
-            src="https://www.crio.do/blog/content/images/2020/09/Sep_01.png"
-          />
+          <img src="../assets/prj_2.svg" />
           <p
             class="bg-green-500 flex items-center leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase inline-block"
           >
@@ -105,9 +99,7 @@
         <div
           class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4"
         >
-          <img
-            src="https://mishpacha.com/wp-content/uploads/2022/07/So-You-Want-to-Be-a%E2%80%A6-Web-Developer-R.jpg"
-          />
+          <img src="../assets/prj_3.svg" />
           <p
             class="bg-green-500 flex items-center leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase inline-block"
           >

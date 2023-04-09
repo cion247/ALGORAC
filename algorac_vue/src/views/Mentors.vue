@@ -12,10 +12,8 @@
           <strong class="text-white"> ALGORAC </strong>
         </h1>
       </div>
+      <img src="../assets/head.png" class="mx-auto" />
     </div>
-    <img src="../assets/head.png" class="mx-auto" />
-
-    <br />
 
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3"
