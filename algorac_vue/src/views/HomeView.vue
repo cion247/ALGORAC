@@ -19,7 +19,6 @@
         </div>
         <NoticeBoard />
       </div>
-
       <Gallery />
       <AboutUs />
       <Footer />
@@ -41,10 +40,10 @@ export default {
   },
   components: {
     NoticeBoard,
-    Gallery,
     AboutUs,
     NavBar,
     Footer,
+    Gallery,
   },
 
   methods: {},

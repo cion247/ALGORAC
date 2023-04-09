@@ -1,6 +1,6 @@
 <template >
   <header
-    class="sticky top-0 text-gray-900 z-10 backdrop-blur-none drop-shadow container mx-auto border-transparent border-8 flex flex-row p-5"
+    class="sticky top-0 text-gray-900 z-10 backdrop-blur-none drop-shadow container mx-auto border-transparent border-8 flex flex-row py-5 px-4"
   >
     <div
       class="flex flex-wrap px-5 py-4 flex-row items-center justify-items-center w-32"
@@ -10,7 +10,7 @@
       </a>
     </div>
     <div
-      class="container bg-slate-200 flex flex-wrap px-5 ml-auto flex-row items-center w-1/5 lg:w-96 rounded-xl"
+      class="container bg-slate-200 flex flex-wrap px-5 ml-auto flex-row items-center lg:w-96 rounded-xl w-32"
     >
       <nav
         class="md:ml-auto flex flex-wrap mx-auto items-center text-base justify-center"
