@@ -12,7 +12,7 @@
       </div>
     </div>
     <div>
-    <img src="/assets/image1.png" alt="">
+    <img src="C:\Users\dipra\OneDrive\HTML.html\Documents\GitHub\algorac\algorac_vue\src\assets\image vue.png" alt="">
   </div>
     <br />
 
