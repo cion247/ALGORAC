@@ -12,13 +12,14 @@
       </div>
     </div>
     <div>
-    <img src="/assets/image vue.png" alt="">
+    <img src="" alt="">
   </div>
     <br />
 
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3"
     >
+    <div class="ss1">
       <div 
         class="w-full bg-white background-shadow-black bg-opacity-40 backdrop-blur m-4 rounded-lg p-12 flex max-w-md mx-auto flex-col justify-center items-center"
       >
@@ -30,11 +31,12 @@
           />
         </div>
         <div class="text-center">
-          <p class="text-l text-gray-700 font-bold mb-2">NAME</p>
+          <p class="text-xl text-gray-700 font-bold mb-2">NAME</p>
           <h3>designation</h3>
           <p class="text-base text-gray-400 font-normal">CONTACT</p>
         </div>
       </div>
+    </div>
       <div
         class="w-full bg-white bg-opacity-40 backdrop-blur m-4 rounded-lg p-12 flex max-w-md mx-auto flex-col justify-center items-center"
       >
@@ -47,7 +49,8 @@
         </div>
         <div class="text-center">
           <p class="text-xl text-gray-700 font-bold mb-2">Lucy Carter</p>
-          <p class="text-base text-gray-400 font-normal">Graphic Designer</p>
+          <h3>designation</h3>
+          <p class="text-base text-gray-400 font-normal">CONTACT</p>
         </div>
       </div>
       <div
@@ -62,7 +65,8 @@
         </div>
         <div class="text-center">
           <p class="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
-          <p class="text-base text-gray-400 font-normal">Dev Ops</p>
+          <h3>designation</h3>
+          <p class="text-base text-gray-400 font-normal">CONTACT</p>
         </div>
       </div>
       <div
@@ -93,7 +97,8 @@
         </div>
         <div class="text-center">
           <p class="text-xl text-gray-700 font-bold mb-2">Lucy Carter</p>
-          <p class="text-base text-gray-400 font-normal">Graphic Designer</p>
+          <h3>designation</h3>
+          <p class="text-base text-gray-400 font-normal">CONTACT</p>
         </div>
       </div>
       <div
@@ -108,7 +113,8 @@
         </div>
         <div class="text-center">
           <p class="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
-          <p class="text-base text-gray-400 font-normal">Dev Ops</p>
+          <h3>designation</h3>
+          <p class="text-base text-gray-400 font-normal">CONTACT</p>
         </div>
       </div>
     </div>
