@@ -147,12 +147,14 @@ export default {
 </script>
 <style>
 .card {
+  border: 5px;
+  border-color: black;
   border: 50px;
   margin: 50px;
-  box-shadow: 10px 10px 10px gray;
+  box-shadow: 5px 5px 10px gray;
   overflow: hidden;
   border-radius: 12px;
-  transition: 0.9s;
+  transition: 0.1s;
 }
 .card:hover {
   cursor: pointer;
