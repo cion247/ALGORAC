@@ -4,17 +4,15 @@
   >
     <NavBar />
     <div
-      class="w-full pt-4 pr-5 pb-6 pl-5 mt-0 mr-auto mb-0 ml-auto space-y-5 sm:py-8 md:py-12 sm:space-y-8 md:space-y-16 max-w-7xl"
+      class="container mx-auto py-4 p-5 space-y-5 sm:py-8 md:py-12 sm:space-y-8 md:space-y-16"
     >
-      <div class="flex flex-col items-center sm:px-5 md:flex-row">
-        <div
-          class="flex flex-col items-start justify-center w-full h-full pt-6 pr-0 pb-6 pl-0 mb-6 md:mb-0 md:w-1/2"
-        >
+      <div class="flex flex-col items-center md:flex-row">
+        <div class="items-start justify-center w-full h-full md:w-1/2">
           <div
             class="flex flex-col items-start justify-center h-full space-y-3 transform md:pr-10 lg:pr-16 md:space-y-5"
           >
             <div
-              class="bg-green-500 flex items-center leading-none rounded-full pt-1.5 pr-3 pb-1.5 pl-2 uppercase inline-block"
+              class="bg-green-500 flex items-center leading-none rounded-full pt-1.5 pr-3 pb-1.5 pl-2 uppercase"
             >
               <p class="inline">
                 <svg
@@ -36,12 +34,11 @@
             <a class="text-4x1 font-bold leading-none lg:text-5xl xl:text-6xl"
               >Projects handled under ALGORAC.</a
             >
-            <div class="pt-2 pr-0 pb-0 pl-0"></div>
           </div>
         </div>
         <div class="w-full md:w-1/2">
           <div class="block">
-            <img src="../assets/prj_1.svg" />
+            <img class="ml-auto rounded-xl" src="../assets/prj_1.svg" />
           </div>
         </div>
       </div>
@@ -49,9 +46,9 @@
         <div
           class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4"
         >
-          <img src="../assets/prj_1.svg" />
+          <img class="rounded-xl" src="../assets/prj_1.svg" />
           <p
-            class="bg-green-500 flex items-center leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase inline-block"
+            class="bg-green-500 flex items-center leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase"
           >
             1.
           </p>
@@ -74,13 +71,13 @@
         <div
           class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4"
         >
-          <img src="../assets/prj_2.svg" />
+          <img class="rounded-xl" src="../assets/prj_2.svg" />
           <p
-            class="bg-green-500 flex items-center leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase inline-block"
+            class="bg-green-500 flex items-center leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase"
           >
-            2.
+            1.
           </p>
-          <a class="text-lg font-bold sm:text-xl md:text-2xl">Project 2</a>
+          <a class="text-lg font-bold sm:text-xl md:text-2xl">Project 1</a>
           <p class="text-sm">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -99,13 +96,13 @@
         <div
           class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4"
         >
-          <img src="../assets/prj_3.svg" />
+          <img class="rounded-xl" src="../assets/prj_3.svg" />
           <p
-            class="bg-green-500 flex items-center leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase inline-block"
+            class="bg-green-500 flex items-center leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase"
           >
-            3.
+            1.
           </p>
-          <a class="text-lg font-bold sm:text-xl md:text-2xl">Project 3</a>
+          <a class="text-lg font-bold sm:text-xl md:text-2xl">Project 1</a>
           <p class="text-sm">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
