@@ -12,24 +12,9 @@
             class="flex flex-col items-start justify-center h-full space-y-3 transform md:pr-10 lg:pr-16 md:space-y-5"
           >
             <div
-              class="bg-green-500 flex items-center leading-none rounded-full pt-1.5 pr-3 pb-1.5 pl-2 uppercase"
+              class="bg-cyan-700 flex items-center leading-none rounded-full pt-1.5 pr-3 pb-1.5 pl-2 uppercase"
             >
-              <p class="inline">
-                <svg
-                  class="w-3.5 h-3.5 mr-1"
-                  fill="currentColor"
-                  viewbox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0
-                  00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755
-                  1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1
-                  0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-              </p>
-              <p class="inline text-xs font-medium">projects</p>
+              <p class="inline text-xs font-medium px-2">Projects</p>
             </div>
             <a class="text-4x1 font-bold leading-none lg:text-5xl xl:text-6xl"
               >Projects handled under ALGORAC.</a
@@ -42,13 +27,13 @@
           </div>
         </div>
       </div>
-      <div class="grid grid-cols-12 sm:px-5 gap-x-8 gap-y-16">
+      <div class="grid grid-cols-12 gap-x-8 gap-y-16">
         <div
           class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4"
         >
           <img class="rounded-xl" src="../assets/prj_1.svg" />
           <p
-            class="bg-green-500 flex items-center leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase"
+            class="bg-cyan-700 flex items-center leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase"
           >
             1.
           </p>
@@ -73,7 +58,7 @@
         >
           <img class="rounded-xl" src="../assets/prj_2.svg" />
           <p
-            class="bg-green-500 flex items-center leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase"
+            class="bg-cyan-700 flex items-center leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase"
           >
             1.
           </p>
@@ -98,7 +83,7 @@
         >
           <img class="rounded-xl" src="../assets/prj_3.svg" />
           <p
-            class="bg-green-500 flex items-center leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase"
+            class="bg-cyan-700 flex items-center leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase"
           >
             1.
           </p>
