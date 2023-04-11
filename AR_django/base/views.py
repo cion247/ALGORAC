@@ -33,7 +33,7 @@ class NoticedetailView(APIView):
 
 class LatestGallerylistView(APIView):
     def get(self, request, format=None):
-        Gallerys = Gallery.objects.all()[:3]
+        Gallerys = Gallery.objects.all()[:6]
         if not Gallerys:
             return Response({'message': 'No data found'})
         serializer = GallerySerializer(Gallerys, many=True)
