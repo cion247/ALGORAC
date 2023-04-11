@@ -1,45 +1,12 @@
 <template>
   <footer class="text-gray-900 body-font bg-slate-200 bg-opacity-75">
     <div
-      class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+      class="container px-5 py-2 mx-auto flex items-center sm:flex-row flex-col"
     >
       <a
         class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
       >
-        <svg
-          width="42"
-          height="30"
-          viewBox="0 0 42 30"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M16.6394 1.45424C17.0266 0.799958 17.9734 0.799957 18.3606 1.45424L34.3603 28.4907C34.7548 29.1573 34.2743 30 33.4998 30H1.50025C0.725658 30 0.245163 29.1573 0.639651 28.4907L16.6394 1.45424Z"
-            fill="white"
-          />
-          <path d="M23.5 0L41.2535 30H5.74648L23.5 0Z" fill="#6EC02B" />
-          <path
-            d="M17.7151 1.83621L33.7149 28.8727C33.8135 29.0393 33.6934 29.25 33.4998 29.25H1.50025C1.3066 29.25 1.18648 29.0393 1.2851 28.8727L17.2849 1.83621C17.3816 1.67264 17.6184 1.67264 17.7151 1.83621Z"
-            stroke="black"
-            stroke-width="1.5"
-          />
-          <path
-            d="M30.9688 25V17H31.9375V24.1406H35.6563V25H30.9688ZM35.7813 25V17H38.4844C39.1094 17 39.6224 17.1068 40.0234 17.3203C40.4245 17.5312 40.7214 17.8216 40.9141 18.1914C41.1068 18.5612 41.2031 18.9818 41.2031 19.4531C41.2031 19.9245 41.1068 20.3424 40.9141 20.707C40.7214 21.0716 40.4258 21.3581 40.0273 21.5664C39.6289 21.7721 39.1198 21.875 38.5 21.875H36.3125V21H38.4688C38.8958 21 39.2396 20.9375 39.5 20.8125C39.763 20.6875 39.9531 20.5104 40.0703 20.2812C40.1901 20.0495 40.25 19.7734 40.25 19.4531C40.25 19.1328 40.1901 18.8529 40.0703 18.6133C39.9505 18.3737 39.7591 18.1888 39.4961 18.0586C39.2331 17.9258 38.8854 17.8594 38.4531 17.8594H36.75V25H35.7813ZM39.5469 21.4062L41.5156 25H40.3906L38.4531 21.4062H39.5469Z"
-            fill="black"
-          />
-          <line
-            x1="21.699"
-            y1="24.8281"
-            x2="26.4362"
-            y2="16.6698"
-            stroke="black"
-          />
-          <line x1="26" y1="21.5" x2="31" y2="21.5" stroke="black" />
-          <line x1="33" y1="17.5" x2="36" y2="17.5" stroke="black" />
-          <line x1="35" y1="21.5" x2="36" y2="21.5" stroke="black" />
-          <line x1="26" y1="24.5" x2="36" y2="24.5" stroke="black" />
-          <line x1="36" y1="24.5" x2="38" y2="24.5" stroke="black" />
-        </svg>
+        <img src="../assets/logo_20.svg" alt="footer logo" />
 
         <span class="ml-3 text-xl">ALGORAC</span>
       </a>
@@ -47,8 +14,7 @@
         class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
       >
         © 2023 ALGORAC :<br />ICFAI Tripura University Kamalghat, Mohanpur -
-        799210
-        <br>Ph-0381-286575
+        799210 <br />Ph-0381-286575
         <a
           href="https://github.com/cion247/"
           class="text-gray-900 ml-1"

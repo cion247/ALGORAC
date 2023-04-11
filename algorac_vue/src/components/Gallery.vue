@@ -1,49 +1,113 @@
+ 
 <template>
-  <section class="overflow-hidden text-neutral-700">
-    <div class="flex flex-col text-center w-full mb-20">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white-900">Gallery</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">glimpses of pride</p>
-    </div>
-    <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
-      <div class="-m-1 flex flex-wrap md:-m-2">
-        <div class="flex w-1/3 flex-wrap" v-for="event in latestEvents" :key="event.id">
-          <div class="w-full p-1 md:p-2">
-            <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center" :src="'http://127.0.0.1:8000' + event.image" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <div
+    class="container mx-auto flex p-5 items-center border rounded-full h-fill"
+  >
+    <swiper
+      :spaceBetween="30"
+      :centeredSlides="true"
+      slides-per-view="1"
+      :autoplay="{
+        delay: 2500,
+        disableOnInteraction: false,
+      }"
+      :pagination="{
+        clickable: true,
+      }"
+      :navigation="true"
+      :modules="modules"
+      class="mySwiper"
+      loop="true"
+    >
+      <swiper-slide>
+        <p class="absolute bottom-20">sdffsffdfsdfsdfsdfsdfsfsd</p>
+        <img
+          class="object-cover w-full holo rounded-3xl"
+          src="../assets/prj_1.svg"
+          alt="image slide 1"
+        />
+      </swiper-slide>
+      <swiper-slide>
+        <p class="absolute bottom-20">sdffsffdfsdfsdfsdfsdfsfsd</p>
+        <img
+          class="object-cover w-full holo rounded-3xl"
+          src="../assets/prj_2.svg"
+          alt="image slide 2"
+        />
+      </swiper-slide>
+      <swiper-slide>
+        <p class="absolute bottom-20">sdffsffdfsdfsdfsdfsdfsfsd</p>
+        <img
+          class="object-cover w-full holo rounded-3xl"
+          src="../assets/prj_3.svg"
+          alt="image slide 3"
+        />
+      </swiper-slide>
+      <swiper-slide>
+        <p class="absolute bottom-20">sdffsffdfsdfsdfsdfsdfsfsd</p>
+        <img
+          class="object-cover w-full holo rounded-3xl"
+          src="../assets/prj_1.svg"
+          alt="image slide 1"
+        />
+      </swiper-slide>
+      <swiper-slide>
+        <p class="absolute bottom-20">sdffsffdfsdfsdfsdfsdfsfsd</p>
+        <img
+          class="object-cover w-full holo rounded-3xl"
+          src="../assets/prj_2.svg"
+          alt="image slide 2"
+        />
+      </swiper-slide>
+      <swiper-slide>
+        <p class="absolute bottom-20">sdffsffdfsdfsdfsdfsdfsfsd</p>
+        <img
+          class="object-cover w-full holo rounded-3xl"
+          src="../assets/prj_3.svg"
+          alt="image slide 3"
+        />
+      </swiper-slide>
+    </swiper>
+  </div>
 </template>
-
 <script>
-import axios from "axios";
+import { Swiper, SwiperSlide } from "swiper/vue";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 export default {
-  name: "Gallery",
-  data() {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
     return {
-      latestEvents: [],
+      modules: [Autoplay, Pagination, Navigation],
     };
-  },
-  components: {},
-  mounted() {
-    this.getLatestEvents();
-  },
-  methods: {
-    getLatestEvents() {
-      axios
-        .get("/api/v1/gallery-latest/", { timeout: 10000 }) // increase timeout to 10000ms
-        .then((response) => {
-          this.latestEvents = response.data;
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    },
   },
 };
 </script>
-
 <style scoped>
-</style>
+.holo {
+  height: 20rem;
+}
+@media (min-width: 1024px) {
+  .holo {
+    height: 35rem;
+  }
+}
+div.swiper-button-prev {
+  color: aliceblue !important;
+}
+
+.swiper-button-next {
+  color: red;
+}
+:root {
+  --swiper-theme-color: #ff0000;
+}
+</style> 
