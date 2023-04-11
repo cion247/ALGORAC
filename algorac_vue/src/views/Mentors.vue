@@ -30,8 +30,11 @@
           </div>
           <div class="text-center">
             <p class="text-xl text-gray-300 font-bold mb-2">NAME</p>
-            <h3>designation</h3>
-            <p class="text-base text-gray-400 font-normal">CONTACT</p>
+            <h3>(designation)</h3>
+            
+            <p class="text-base text-black-400 font-normal"><span class="ph1"><a link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+              <i class='fa-solid fa-square-phone'></i></span> CONTACT</p>
+              
           </div>
         </div>
       </div>
@@ -48,9 +51,12 @@
           </div>
           <div class="text-center">
             <p class="text-xl text-gray-300 font-bold mb-2">NAME</p>
-            <h3>designation</h3>
-            <p class="text-base text-gray-400 font-normal">CONTACT</p>
+            <h3>(designation)</h3>
+            
+            <p class="text-base text-black-400 font-normal"><span class="ph1"><a link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+              <i class='fa-solid fa-square-phone'></i></span> CONTACT</p>
           </div>
+          
         </div>
       </div>
       <div class="m-12 mx-auto w-full">
@@ -66,9 +72,12 @@
           </div>
           <div class="text-center">
             <p class="text-xl text-gray-300 font-bold mb-2">NAME</p>
-            <h3>designation</h3>
-            <p class="text-base text-gray-400 font-normal">CONTACT</p>
+            <h3>(designation)</h3>
+            
+            <p class="text-base text-black-400 font-normal"><span class="ph1"><a link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+              <i class='fa-solid fa-square-phone'></i></span> CONTACT</p>
           </div>
+          
         </div>
       </div>
       <div class="m-12 mx-auto w-full">
@@ -84,9 +93,12 @@
           </div>
           <div class="text-center">
             <p class="text-xl text-gray-300 font-bold mb-2">NAME</p>
-            <h3>designation</h3>
-            <p class="text-base text-gray-400 font-normal">CONTACT</p>
+            <h3>(designation)</h3>
+            
+            <p class="text-base text-black-400 font-normal"><span class="ph1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+              <i class='fa-solid fa-square-phone'></i></span> CONTACT</p>
           </div>
+          
         </div>
       </div>
       <div class="m-12 mx-auto w-full">
@@ -102,9 +114,13 @@
           </div>
           <div class="text-center">
             <p class="text-xl text-gray-300 font-bold mb-2">NAME</p>
-            <h3>designation</h3>
-            <p class="text-base text-gray-400 font-normal">CONTACT</p>
+            <h3>(designation)</h3>
+            
+            
+            <p class="text-base text-black-400 font-normal"><span class="ph1"><a link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+              <i class='fa-solid fa-square-phone'></i></span> CONTACT</p>
           </div>
+          
         </div>
       </div>
       <div class="m-12 mx-auto w-full">
@@ -120,8 +136,12 @@
           </div>
           <div class="text-center">
             <p class="text-xl text-gray-300 font-bold mb-2">NAME</p>
-            <h3>designation</h3>
-            <p class="text-base text-gray-400 font-normal">CONTACT</p>
+            <h3>(designation)</h3>
+          
+            
+            <p class="text-base text-black-400 font-normal"><span class="ph1"><a link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+              <i class='fa-solid fa-square-phone'></i></span> CONTACT</p>
+            
           </div>
         </div>
       </div>
@@ -151,5 +171,11 @@ export default {
 .card:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+.ph1{
+  color: gray;
+}
+.ph1:hover{
+color: white;
 }
 </style>
