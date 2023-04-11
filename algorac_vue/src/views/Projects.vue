@@ -22,8 +22,8 @@
           </div>
         </div>
         <div class="w-full md:w-1/2">
-          <div class="block">
-            <img class="ml-auto rounded-xl" src="../assets/prj_1.svg" />
+          <div class="block border border-w-2 rounded-full">
+            <img class="mx-auto my-2 rounded-lg" src="../assets/prj_1.svg" />
           </div>
         </div>
       </div>
