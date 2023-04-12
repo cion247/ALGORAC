@@ -1,7 +1,7 @@
 
 from rest_framework import serializers
 
-from .models import Gallery, Mentor, Notice, projects, messages
+from .models import Gallery, Mentor, Notice, projects, messages, Feadback
 from django.contrib.auth.models import User
 
 from django.contrib.auth import get_user_model
@@ -44,6 +44,10 @@ class MentorSerializer(serializers.ModelSerializer):
         model = Mentor
         fields = '__all__'
 
+class FeadbackSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Feadback
+        fields = '__all__'
 
 class UserSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, required=True)

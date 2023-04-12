@@ -5,7 +5,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .models import Gallery, Mentor, Notice, projects
-from .serializers import GallerySerializer, MentorSerializer, NoticeSerializer, ProjectSerializer, MessagesSerializer
+from .serializers import GallerySerializer, MentorSerializer, NoticeSerializer, ProjectSerializer, MessagesSerializer, FeadbackSerializer
 # Create your views here.
 
 from rest_framework import generics, permissions
@@ -110,6 +110,13 @@ class MessagesView(APIView):
             return Response(massages.data, status=status.HTTP_201_CREATED)
         return Response(massages.errors, status=status.HTTP_400_BAD_REQUEST)
 
+class FeadbackView(APIView):
+    def post(self, request, format=None):
+        massages = FeadbackSerializer(data=request.data)
+        if massages.is_valid():
+            massages.save()
+            return Response(massages.data, status=status.HTTP_201_CREATED)
+        return Response(massages.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class MentorView(APIView):
     def post(self, request, format=None):
