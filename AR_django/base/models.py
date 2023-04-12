@@ -75,3 +75,14 @@ class Mentor(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Feadback(models.Model):
+    name = models.CharField(max_length=256)
+    massages = models.TextField()
+    time_added = models.TimeField(auto_now_add=True)
+    class Meta:
+            ordering = ['-time_added']
+    
+    def __str__(self):
+        return self.name
