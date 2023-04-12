@@ -8,6 +8,45 @@ from .models import Gallery, Mentor, Notice, projects
 from .serializers import GallerySerializer, MentorSerializer, NoticeSerializer, ProjectSerializer, MessagesSerializer
 # Create your views here.
 
+from rest_framework import generics, permissions
+from rest_framework_simplejwt.tokens import RefreshToken
+from .serializers import UserSerializer, UserLoginSerializer
+
+
+class SignupAPIView(generics.CreateAPIView):
+    permission_classes = [permissions.AllowAny]
+    serializer_class = UserSerializer
+
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        user = serializer.save()
+
+        refresh = RefreshToken.for_user(user)
+        res = {
+            "refresh": str(refresh),
+            "access": str(refresh.access_token),
+        }
+        return Response(res)
+
+
+class LoginAPIView(generics.GenericAPIView):
+    serializer_class = UserLoginSerializer
+    permission_classes = [permissions.AllowAny]
+
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        user = serializer.validated_data['user']
+        refresh = RefreshToken.for_user(user)
+
+        res = {
+            "refresh": str(refresh),
+            "access": str(refresh.access_token),
+        }
+        return Response(res)
+
 
 class LatestNoticelistView(APIView):
     def get(self, request, format=None):
