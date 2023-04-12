@@ -42,9 +42,39 @@
       </div>
     </div>
     </template>
-    <script>
+
+<script>
+import axios from 'axios';
+
+export default {
+  name: 'Login',
+  data() {
+    return {
+      username: '',
+      password: '',
+      rememberMe: false,
+      errorMessage: '',
+    };
+  },
+  methods: {
+    async login() {
+      try {
+        const response = await axios.post(`http://127.0.0.1:8000/api/v1/token/`, {
+          username: this.username,
+          password: this.password,
+        });
+
+        // Save token to local storage
+        localStorage.setItem('accessToken', response.data.access);
+        localStorage.setItem('refreshToken', response.data.refresh);
+
+        // Redirect to dashboard
+        this.$router.push('/');
+      } catch (error) {
+        this.errorMessage = error.response.data.detail;
+      }
+    },
+  },
+};
+</script>
     
-    export default {
-        name:"Login",
-    }
-    </script>
