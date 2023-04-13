@@ -73,6 +73,8 @@
 </template>
       
 <script>
+import axios from 'axios';
+
 export default {
   name: "AboutUs",
   data() {
@@ -85,14 +87,27 @@ export default {
   components: {},
 
   methods: {
-    submits() {
-      this.email = "";
-      this.name = "";
-      this.message = "MESSAGE SUBMITTED";
+    async submits() {
+      const messageData = {
+        name: this.name,
+        email: this.email,
+        description: this.message
+      };
+
+      try {
+        const response = await axios.post('http://127.0.0.1:8000/api/v1/messages/', messageData);
+        console.log(response);
+        this.email = "";
+        this.name = "";
+        this.message = "";
+      } catch (error) {
+        console.error(error);
+      }
     },
   },
 };
 </script>
+
       
 
       
