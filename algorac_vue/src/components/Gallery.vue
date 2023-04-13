@@ -100,14 +100,4 @@ export default {
     height: 35rem;
   }
 }
-div.swiper-button-prev {
-  color: aliceblue !important;
-}
-
-.swiper-button-next {
-  color: red;
-}
-:root {
-  --swiper-theme-color: #ff0000;
-}
 </style> 

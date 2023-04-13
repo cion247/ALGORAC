@@ -5,8 +5,47 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .models import Gallery, Mentor, Notice, projects
-from .serializers import GallerySerializer, MentorSerializer, NoticeSerializer, ProjectSerializer, MessagesSerializer
+from .serializers import GallerySerializer, MentorSerializer, NoticeSerializer, ProjectSerializer, MessagesSerializer, FeadbackSerializer
 # Create your views here.
+
+from rest_framework import generics, permissions
+from rest_framework_simplejwt.tokens import RefreshToken
+from .serializers import UserSerializer, UserLoginSerializer
+
+
+class SignupAPIView(generics.CreateAPIView):
+    permission_classes = [permissions.AllowAny]
+    serializer_class = UserSerializer
+
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        user = serializer.save()
+
+        refresh = RefreshToken.for_user(user)
+        res = {
+            "refresh": str(refresh),
+            "access": str(refresh.access_token),
+        }
+        return Response(res)
+
+
+class LoginAPIView(generics.GenericAPIView):
+    serializer_class = UserLoginSerializer
+    permission_classes = [permissions.AllowAny]
+
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        user = serializer.validated_data['user']
+        refresh = RefreshToken.for_user(user)
+
+        res = {
+            "refresh": str(refresh),
+            "access": str(refresh.access_token),
+        }
+        return Response(res)
 
 
 class LatestNoticelistView(APIView):
@@ -33,7 +72,7 @@ class NoticedetailView(APIView):
 
 class LatestGallerylistView(APIView):
     def get(self, request, format=None):
-        Gallerys = Gallery.objects.all()[:3]
+        Gallerys = Gallery.objects.all()[:6]
         if not Gallerys:
             return Response({'message': 'No data found'})
         serializer = GallerySerializer(Gallerys, many=True)
@@ -66,6 +105,15 @@ class ProjectView(APIView):
 class MessagesView(APIView):
     def post(self, request, format=None):
         massages = MessagesSerializer(data=request.data)
+        if massages.is_valid():
+            massages.save()
+            return Response(massages.data, status=status.HTTP_201_CREATED)
+        return Response(massages.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class FeadbackView(APIView):
+    def post(self, request, format=None):
+        massages = FeadbackSerializer(data=request.data)
         if massages.is_valid():
             massages.save()
             return Response(massages.data, status=status.HTTP_201_CREATED)
