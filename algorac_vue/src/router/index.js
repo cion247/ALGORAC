@@ -10,12 +10,31 @@ const routes = [
     path: "/",
     name: "home",
     component: HomeView,
+    meta: {
+      enterClass: "animate__animated animate__slideInRight animate__fast",
+      leaveClass: "animate__animated animate__slideOutLeft animate__fast",
+    }
   },
   {
     path: "/projects",
     name: "projects",
+    component: Projects,
+    meta: {
+      enterClass: "animate__animated animate__slideInRight animate__faster",
+      leaveClass: "animate__animated animate__slideOutLeft animate__faster",
+    }
+  },
+
+  {
+    path: "/mentors",
+    name: "Mentors",
     component: () =>
-      import("../views/Projects.vue"),
+      import("../views/Mentors.vue"),
+    meta: {
+      enterClass: "animate__animated animate__slideInRight animate__faster",
+      leaveClass: "animate__animated animate__slideOutLeft animate__faster",
+    }
+
   },
   {
     path: "/login",
@@ -23,20 +42,13 @@ const routes = [
     component: () =>
       import("../views/Login.vue"),
 
-  },
-  {
-    path: "/mentors",
-    name: "Mentors",
+    meta: {
+      enterClass: "animate__animated animate__backInUp animate__faster",
+      leaveClass: "animate__animated animate__slideOutLeft animate__faster",
+    }
 
-    component: () =>
-      import("../views/Mentors.vue"),
   },
-  {
-    path: "/about",
-    name: "about",
-    component: () =>
-      import("../views/AboutView.vue"),
-  },
+
 ];
 
 const router = createRouter({

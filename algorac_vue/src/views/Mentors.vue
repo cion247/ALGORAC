@@ -1,9 +1,5 @@
 <template>
-  <section
-    class="font-mono w-full h-full bg-one bg-fixed bg-cover bg-center text-white"
-  >
-    <NavBar />
-
+  <section class="w-full h-full text-white page">
     <div class="text-center pb-6">
       <h2 class="text-base font-bold text-indigo-50">|| OUR MENTORS IN ||</h2>
       <div>
@@ -31,10 +27,20 @@
           <div class="text-center">
             <p class="text-xl text-gray-300 font-bold mb-2">NAME</p>
             <h3>(designation)</h3>
-            
-            <p class="text-base text-black-400 font-normal"><span class="ph1"><a link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-              <i class='fa-solid fa-square-phone'></i></span> CONTACT</p>
-              
+
+            <p class="text-base text-black-400 font-normal">
+              <span class="ph1"
+                ><a
+                  link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+                  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+                  crossorigin="anonymous"
+                  referrerpolicy="no-referrer" />
+                <i class="fa-solid fa-square-phone"></i
+              ></span>
+              CONTACT
+            </p>
           </div>
         </div>
       </div>
@@ -52,11 +58,21 @@
           <div class="text-center">
             <p class="text-xl text-gray-300 font-bold mb-2">NAME</p>
             <h3>(designation)</h3>
-            
-            <p class="text-base text-black-400 font-normal"><span class="ph1"><a link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-              <i class='fa-solid fa-square-phone'></i></span> CONTACT</p>
+
+            <p class="text-base text-black-400 font-normal">
+              <span class="ph1"
+                ><a
+                  link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+                  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+                  crossorigin="anonymous"
+                  referrerpolicy="no-referrer" />
+                <i class="fa-solid fa-square-phone"></i
+              ></span>
+              CONTACT
+            </p>
           </div>
-          
         </div>
       </div>
       <div class="m-12 mx-auto w-full">
@@ -73,11 +89,21 @@
           <div class="text-center">
             <p class="text-xl text-gray-300 font-bold mb-2">NAME</p>
             <h3>(designation)</h3>
-            
-            <p class="text-base text-black-400 font-normal"><span class="ph1"><a link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-              <i class='fa-solid fa-square-phone'></i></span> CONTACT</p>
+
+            <p class="text-base text-black-400 font-normal">
+              <span class="ph1"
+                ><a
+                  link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+                  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+                  crossorigin="anonymous"
+                  referrerpolicy="no-referrer" />
+                <i class="fa-solid fa-square-phone"></i
+              ></span>
+              CONTACT
+            </p>
           </div>
-          
         </div>
       </div>
       <div class="m-12 mx-auto w-full">
@@ -94,11 +120,20 @@
           <div class="text-center">
             <p class="text-xl text-gray-300 font-bold mb-2">NAME</p>
             <h3>(designation)</h3>
-            
-            <p class="text-base text-black-400 font-normal"><span class="ph1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-              <i class='fa-solid fa-square-phone'></i></span> CONTACT</p>
+
+            <p class="text-base text-black-400 font-normal">
+              <span class="ph1"
+                ><link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+                  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+                  crossorigin="anonymous"
+                  referrerpolicy="no-referrer" />
+                <i class="fa-solid fa-square-phone"></i
+              ></span>
+              CONTACT
+            </p>
           </div>
-          
         </div>
       </div>
       <div class="m-12 mx-auto w-full">
@@ -115,12 +150,21 @@
           <div class="text-center">
             <p class="text-xl text-gray-300 font-bold mb-2">NAME</p>
             <h3>(designation)</h3>
-            
-            
-            <p class="text-base text-black-400 font-normal"><span class="ph1"><a link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-              <i class='fa-solid fa-square-phone'></i></span> CONTACT</p>
+
+            <p class="text-base text-black-400 font-normal">
+              <span class="ph1"
+                ><a
+                  link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+                  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+                  crossorigin="anonymous"
+                  referrerpolicy="no-referrer" />
+                <i class="fa-solid fa-square-phone"></i
+              ></span>
+              CONTACT
+            </p>
           </div>
-          
         </div>
       </div>
       <div class="m-12 mx-auto w-full">
@@ -137,30 +181,32 @@
           <div class="text-center">
             <p class="text-xl text-gray-300 font-bold mb-2">NAME</p>
             <h3>(designation)</h3>
-          
-            
-            <p class="text-base text-black-400 font-normal"><span class="ph1"><a link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-              <i class='fa-solid fa-square-phone'></i></span> CONTACT</p>
-            
+
+            <p class="text-base text-black-400 font-normal">
+              <span class="ph1"
+                ><a
+                  link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+                  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+                  crossorigin="anonymous"
+                  referrerpolicy="no-referrer" />
+                <i class="fa-solid fa-square-phone"></i
+              ></span>
+              CONTACT
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <Footer />
   </section>
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue";
-import Footer from "@/components/Footer.vue";
-
 export default {
   name: "Mentors",
   data() {},
-  components: {
-    NavBar,
-    Footer,
-  },
+  components: {},
 };
 </script>
 <style>
@@ -172,10 +218,10 @@ export default {
   cursor: pointer;
   transform: scale(1.1);
 }
-.ph1{
+.ph1 {
   color: gray;
 }
-.ph1:hover{
-color: white;
+.ph1:hover {
+  color: white;
 }
 </style>
