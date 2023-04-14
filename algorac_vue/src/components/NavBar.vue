@@ -15,18 +15,19 @@
       <nav
         class="md:ml-auto flex flex-wrap mx-auto items-center text-base justify-center"
       >
-        <a href="/" class="mr-3 py-1 text-xl font-bold hover:text-gray-900"
-          >Home</a
+        <router-link
+          to="/"
+          class="mr-3 py-1 text-xl font-bold border-black hover:border-b-2"
+          >Home</router-link
         >
-        <a
-          href="/projects"
-          class="mr-3 py-1 text-xl font-bold hover:text-gray-900"
-          >Projects</a
-        >
-        <a
-          href="/mentors"
-          class="mr-3 py-1 text-xl font-bold hover:text-gray-900"
-          >Mentors</a
+        <router-link
+          to="/projects"
+          class="mr-3 py-1 text-xl font-bold border-black hover:border-b-2"
+          >projects</router-link
+        ><router-link
+          to="/mentors"
+          class="mr-3 py-1 text-xl font-bold border-black hover:border-b-2"
+          >mentors</router-link
         >
       </nav>
       <button
@@ -53,5 +54,10 @@ export default {
   name: "NavBar",
 };
 </script>
+<style scoped>
+a.router-link-active {
+  border-bottom: 2px solid #000;
+}
+</style>
     
     
