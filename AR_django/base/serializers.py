@@ -1,4 +1,6 @@
 
+from httplib2 import Authentication
+from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework import serializers
 
 from .models import Gallery, Mentor, Notice, projects, messages, Feadback
@@ -66,11 +68,22 @@ class UserSerializer(serializers.ModelSerializer):
         user.set_password(validated_data['password'])
         user.save()
         return user
-
+    
+    
 
 class UserLoginSerializer(serializers.Serializer):
     username = serializers.CharField(max_length=255)
     password = serializers.CharField(max_length=128, write_only=True)
+    tokens = serializers.SerializerMethodField()  # New field to hold tokens
+
+    def get_tokens(self, obj):  # Method to generate tokens
+        user = obj['user']
+        refresh = RefreshToken.for_user(user)
+
+        return {
+            'refresh': str(refresh),
+            'access': str(refresh.access_token),
+        }
 
     def validate(self, data):
         username = data.get("username", None)
@@ -86,21 +99,16 @@ class UserLoginSerializer(serializers.Serializer):
                 'A password is required to log in.'
             )
 
-        user = User.objects.filter(username=username).first()
+        user = Authentication(username=username, password=password)
 
         if user is None:
             raise serializers.ValidationError(
                 'No user found with this username.'
             )
 
-        if not user.check_password(password):
-            raise serializers.ValidationError(
-                'Invalid password.'
-            )
-
         return {
             "user": user,
             "username": user.username,
             "email": user.email,
-            "tokens": user.tokens(),
+            "tokens": self.get_tokens({"user": user}),
         }
