@@ -56,9 +56,9 @@
         <p
           class="bg-cyan-700 flex items-center leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase"
         >
-          1.
+          2.
         </p>
-        <a class="text-lg font-bold sm:text-xl md:text-2xl">Project 1</a>
+        <a class="text-lg font-bold sm:text-xl md:text-2xl">Project 2</a>
         <p class="text-sm">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -81,9 +81,9 @@
         <p
           class="bg-cyan-700 flex items-center leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase"
         >
-          1.
+          3.
         </p>
-        <a class="text-lg font-bold sm:text-xl md:text-2xl">Project 1</a>
+        <a class="text-lg font-bold sm:text-xl md:text-2xl">Project 3</a>
         <p class="text-sm">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
