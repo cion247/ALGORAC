@@ -29,6 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1',
                  'localhost',
+                 'algorac-production.up.railway.app',
                  'https://algorac-production.up.railway.app',
                  'https://www.algorac-production.up.railway.app']
 
