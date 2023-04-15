@@ -89,44 +89,28 @@
 </template>
 
 <script>
-import axios from "axios";
+import axios from 'axios';
 
 export default {
   data() {
     return {
-      username: "",
-      password: "",
-    };
+      username: '',
+      password: '',
+    }
   },
   methods: {
-    login() {
-      axios
-        .post("http://127.0.0.1:8000/api/v1/login/", {
+    async login() {
+      try {
+        const response = await axios.post('http://localhost:8000/api/v1/token/', {
           username: this.username,
           password: this.password,
-        })
-        .then((response) => {
-          const token = response.data.access;
-          // Save token to local storage or a cookie
-          // Redirect to another page or update component state
-        })
-        .catch((error) => {
-          console.error(error);
-          if (error.response) {
-            console.log(error.response.data);
-            console.log(error.response.status);
-            console.log(error.response.headers);
-            // Display an error message to the user based on the response status code
-            if (error.response.status === 400) {
-              alert("Invalid username or password");
-            } else {
-              alert("An error occurred while processing your request");
-            }
-          } else {
-            alert("An error occurred while communicating with the server");
-          }
         });
+        localStorage.setItem('access_token', response.data.access);
+        this.$router.push('/');
+      } catch (error) {
+        console.log(error);
+      }
     },
   },
-};
+}
 </script>
