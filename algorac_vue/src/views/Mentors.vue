@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full h-full text-white page">
+  <section class="w-full h-full text-white">
     <div class="text-center pb-6">
       <h2 class="text-base font-bold text-indigo-50">|| OUR MENTORS IN ||</h2>
       <div>

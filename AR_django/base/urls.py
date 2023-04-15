@@ -12,7 +12,7 @@ urlpatterns = [
 
     path('gallery-latest/', LatestGallerylistView.as_view()),
 
-    path('projects/', ProjectView.as_view()),
+    path('projects/', ProjectView.as_view()), 
 
     path('messages/', MessagesView.as_view()),
 

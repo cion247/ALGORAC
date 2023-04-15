@@ -28,6 +28,7 @@ class UserCreateAPIView(APIView):
             return Response(response_data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
     @classmethod
     def get_token(cls, user):
@@ -42,6 +43,7 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
 
 class MyTokenObtainPairView(TokenObtainPairView):
     serializer_class = MyTokenObtainPairSerializer
+
 
 class LatestNoticelistView(APIView):
     def get(self, request, format=None):
@@ -116,11 +118,16 @@ class FeadbackView(APIView):
 
 
 class MentorView(APIView):
+    def get(self, request, format=None):
+        mentor = list(Mentor.objects.all())
+        if not mentor:
+            return Response({'message': 'No data found'})
+        serializer = MentorSerializer(mentor, many=True)
+        return Response(serializer.data)
+
     def post(self, request, format=None):
         mentor = Mentor.objects.all()
         if not mentor:
             return Response({'message': 'No data found'})
         serializer = MentorSerializer(mentor, many=True)
         return Response(serializer.data)
-
-
