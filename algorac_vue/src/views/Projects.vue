@@ -26,76 +26,29 @@
     <div class="grid grid-cols-12 gap-x-8 gap-y-16">
       <div
         class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4"
+        v-for="prj in this.projects"
+        :key="prj.id"
       >
-        <img class="rounded-xl" src="../assets/prj_1.svg" />
+        <img
+          class="rounded-xl"
+          v-bind:src="'http://127.0.0.1:8000' + prj.image"
+        />
         <p
           class="bg-cyan-700 flex items-center leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase"
         >
-          1.
+          {{ prj.id }}
         </p>
-        <a class="text-lg font-bold sm:text-xl md:text-2xl">Project 1</a>
+        <a class="text-lg font-bold sm:text-xl md:text-2xl">{{ prj.title }}</a>
         <p class="text-sm">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam,
+          {{ prj.description }}
         </p>
         <div class="pt-2 pr-0 pb-0 pl-0">
           <p class="text-sm font-medium inline">By:</p>
-          <a class="inline text-xs font-medium mt-0 mr-1 mb-0 ml-0 underline"
-            >ALGORAC</a
-          >
+          <a class="inline text-xs font-medium mt-0 mr-1 mb-0 ml-0 underline">{{
+            prj.creator
+          }}</a>
           <p class="inline text-xs font-medium mt-0 mr-1 mb-0 ml-1">
-            · DD/MM/YYYY ·
-          </p>
-        </div>
-      </div>
-      <div
-        class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4"
-      >
-        <img class="rounded-xl" src="../assets/prj_2.svg" />
-        <p
-          class="bg-cyan-700 flex items-center leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase"
-        >
-          1.
-        </p>
-        <a class="text-lg font-bold sm:text-xl md:text-2xl">Project 1</a>
-        <p class="text-sm">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam,
-        </p>
-        <div class="pt-2 pr-0 pb-0 pl-0">
-          <p class="text-sm font-medium inline">By:</p>
-          <a class="inline text-xs font-medium mt-0 mr-1 mb-0 ml-0 underline"
-            >ALGORAC</a
-          >
-          <p class="inline text-xs font-medium mt-0 mr-1 mb-0 ml-1">
-            · DD/MM/YYYY ·
-          </p>
-        </div>
-      </div>
-      <div
-        class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4"
-      >
-        <img class="rounded-xl" src="../assets/prj_3.svg" />
-        <p
-          class="bg-cyan-700 flex items-center leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase"
-        >
-          1.
-        </p>
-        <a class="text-lg font-bold sm:text-xl md:text-2xl">Project 1</a>
-        <p class="text-sm">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam,
-        </p>
-        <div class="pt-2 pr-0 pb-0 pl-0">
-          <p class="text-sm font-medium inline">By:</p>
-          <a class="inline text-xs font-medium mt-0 mr-1 mb-0 ml-0 underline"
-            >ALGORAC</a
-          >
-          <p class="inline text-xs font-medium mt-0 mr-1 mb-0 ml-1">
-            · DD/MM/YYYY ·
+            · {{ prj.time_added }} ·
           </p>
         </div>
       </div>
@@ -103,9 +56,29 @@
   </div>
 </template>
 <script>
+import axios from "axios";
 export default {
   name: "Projects",
-  data() {},
+  data() {
+    return {
+      projects: [],
+    };
+  },
   components: {},
+  mounted() {
+    this.getLatestProjects();
+  },
+  methods: {
+    getLatestProjects() {
+      axios
+        .get("api/v1/projects/")
+        .then((response) => {
+          this.projects = response.data;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+  },
 };
 </script>
