@@ -116,7 +116,7 @@ class FeadbackView(APIView):
 
 
 class MentorView(APIView):
-    def post(self, request, format=None):
+    def get(self, request, format=None):
         mentor = Mentor.objects.all()
         if not mentor:
             return Response({'message': 'No data found'})
