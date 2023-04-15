@@ -1,54 +1,31 @@
 from django.http import Http404
 from django.shortcuts import render
-from rest_framework.authentication import TokenAuthentication
+
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .models import Gallery, Mentor, Notice, projects
 from .serializers import GallerySerializer, MentorSerializer, NoticeSerializer, ProjectSerializer, MessagesSerializer, FeadbackSerializer
+
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
+from rest_framework_simplejwt.views import TokenObtainPairView
 # Create your views here.
 
-from rest_framework import generics, permissions
-from rest_framework_simplejwt.tokens import RefreshToken
-from .serializers import UserSerializer, UserLoginSerializer
 
-from rest_framework.authtoken.models import Token
-from django.contrib.auth.models import User
+class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
+    @classmethod
+    def get_token(cls, user):
+        token = super().get_token(user)
 
-class SignupAPIView(generics.CreateAPIView):
-    permission_classes = [permissions.AllowAny]
-    serializer_class = UserSerializer
+        # Add custom claims
+        token['username'] = user.username
+        # ...
 
-    def post(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        user = serializer.save()
-
-        refresh = RefreshToken.for_user(user)
-        res = {
-            "refresh": str(refresh),
-            "access": str(refresh.access_token),
-        }
-        return Response(res)
+        return token
 
 
-class LoginAPIView(generics.GenericAPIView):
-    serializer_class = UserLoginSerializer
-    permission_classes = [permissions.AllowAny]
-
-    def post(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-
-        user = serializer.validated_data['user']
-        refresh = RefreshToken.for_user(user)
-
-        res = {
-            "refresh": str(refresh),
-            "access": str(refresh.access_token),
-        }
-        return Response(res)
-
+class MyTokenObtainPairView(TokenObtainPairView):
+    serializer_class = MyTokenObtainPairSerializer
 
 class LatestNoticelistView(APIView):
     def get(self, request, format=None):
@@ -131,15 +108,3 @@ class MentorView(APIView):
         return Response(serializer.data)
 
 
-class RegisterUser(APIView):
-    def post(self, request):
-        serializer= UserSerializer(data= request.data)
-
-        if not serializer.is_valid():
-            return Response({'status': 403, 'errors': serializer.errors, 'message': 'fsfdsfsd'})
-        
-        serializer.save()
-
-        user= User.objects.get(username=serializer.data['username'])
-        token_obj , _=   Token.objects.get_or_create(user=user)
-        return Response({'status': 200, 'payload': serializer.data, 'token': str(token_obj)})
