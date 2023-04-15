@@ -52,12 +52,9 @@ INSTALLED_APPS = [
 
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    # front-end address
-    "http://localhost:8080"
+# Allow cross origin requests from all domains
+CORS_ALLOW_ALL_ORIGINS = True
 
-
-]
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
