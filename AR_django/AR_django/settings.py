@@ -27,8 +27,14 @@ SECRET_KEY = 'django-insecure-$0n&v7#)iy*#@_)#2__37^@^4aku0m8&97p7*me0*v4(sa0&e0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['127.0.0.1',
+                 'localhost',
+                 'algorac-production.up.railway.app',
+                 'https://algorac-production.up.railway.app',
+                 'https://www.algorac-production.up.railway.app']
 
+CSRF_TRUSTED_ORIGINS = ['https://algorac-production.up.railway.app',
+                        'https://www.algorac-production.up.railway.app']
 
 
 # Application definition
@@ -49,12 +55,9 @@ INSTALLED_APPS = [
 
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    # front-end address
-    "http://localhost:8080"
+# Allow cross origin requests from all domains
+CORS_ALLOW_ALL_ORIGINS = True
 
-
-]
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -175,7 +178,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media/'
-STATIC_ROOT= os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
