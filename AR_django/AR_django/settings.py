@@ -29,8 +29,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-CSRF_TRUSTED_ORIGINS = ['https://backenddjango-production.up.railway.app',
-                        'https://www.backenddjango-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://algorac-production.up.railway.app',
+                        'https://www.algorac-production.up.railway.app']
 
 
 
