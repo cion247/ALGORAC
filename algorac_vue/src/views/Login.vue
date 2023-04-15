@@ -43,20 +43,14 @@
 
         <div class="flex items-center justify-between">
           <div class="flex items-center">
-            <input
-              id="remember-me"
-              name="remember-me"
-              type="checkbox"
-              class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
-            />
             <label for="remember-me" class="ml-2 block text-sm text-gray-900"
-              >Remember me</label
+              >Don't have an account</label
             >
           </div>
 
           <div class="text-sm">
-            <a href="#" class="font-medium text-gray-950 hover:text-gray-950"
-              >Forgot your password?</a
+            <a href="/SignUP" class="font-medium text-gray-950 hover:text-gray-950"
+              >Sign Up</a
             >
           </div>
         </div>
@@ -89,44 +83,28 @@
 </template>
 
 <script>
-import axios from "axios";
+import axios from 'axios';
 
 export default {
   data() {
     return {
-      username: "",
-      password: "",
-    };
+      username: '',
+      password: '',
+    }
   },
   methods: {
-    login() {
-      axios
-        .post("http://127.0.0.1:8000/api/v1/login/", {
+    async login() {
+      try {
+        const response = await axios.post('http://localhost:8000/api/v1/token/', {
           username: this.username,
           password: this.password,
-        })
-        .then((response) => {
-          const token = response.data.access;
-          // Save token to local storage or a cookie
-          // Redirect to another page or update component state
-        })
-        .catch((error) => {
-          console.error(error);
-          if (error.response) {
-            console.log(error.response.data);
-            console.log(error.response.status);
-            console.log(error.response.headers);
-            // Display an error message to the user based on the response status code
-            if (error.response.status === 400) {
-              alert("Invalid username or password");
-            } else {
-              alert("An error occurred while processing your request");
-            }
-          } else {
-            alert("An error occurred while communicating with the server");
-          }
         });
+        localStorage.setItem('access_token', response.data.access);
+        this.$router.push('/');
+      } catch (error) {
+        console.log(error);
+      }
     },
   },
-};
+}
 </script>

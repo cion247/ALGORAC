@@ -1,12 +1,10 @@
 from django.urls import path, include
 
-from base.views import LatestNoticelistView, MentorView, NoticedetailView, LatestGallerylistView, ProjectView, MessagesView, SignupAPIView, LoginAPIView, FeadbackView
-from usermodel.views import APILogoutView
-
+from base.views import LatestNoticelistView, MentorView, MyTokenObtainPairView, NoticedetailView, LatestGallerylistView, ProjectView, MessagesView, FeadbackView, UserCreateAPIView
 from rest_framework_simplejwt.views import (
-    TokenObtainPairView,
     TokenRefreshView,
 )
+
 
 urlpatterns = [
     path('notices-latest/', LatestNoticelistView.as_view()),
@@ -22,9 +20,9 @@ urlpatterns = [
 
     path('mentor/', MentorView.as_view()),
 
-    path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('token/', MyTokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    path('signup/', SignupAPIView.as_view(), name='signup'),
-    path('login/', LoginAPIView.as_view(), name='login'),
-    path('logout_token/', APILogoutView.as_view(), name='logout_token')
+    path('users/create/', UserCreateAPIView.as_view(), name='user_create')
 ]
+
+

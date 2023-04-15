@@ -48,7 +48,18 @@ const routes = [
     }
 
   },
+  {
+    path: "/SignUP",
+    name: "SignUP",
+    component: () =>
+      import("../views/Registration.vue"),
 
+    meta: {
+      enterClass: "animate__animated animate__backInUp animate__faster",
+      leaveClass: "animate__animated animate__slideOutLeft animate__faster",
+    }
+
+  },
 ];
 
 const router = createRouter({
