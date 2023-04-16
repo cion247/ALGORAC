@@ -13,20 +13,24 @@
     <div
       class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3"
     >
-      <div class="m-12 mx-auto w-full">
+      <div
+        class="m-12 mx-auto w-full"
+        v-for="ment in this.latestMentors"
+        v-bind:key="ment.id"
+      >
         <div
           class="w-full card mx-auto overflow-hidden bg-white bg-opacity-10 backdrop-blur rounded-lg p-12 flex max-w-md flex-col justify-center items-center"
         >
           <div class="mb-4">
             <img
               class="object-center object-cover rounded-full h-36 w-36"
-              src="http://2.bp.blogspot.com/_lwBPBFdTaWM/TIeBFJY4EVI/AAAAAAAAAA8/hta0nczcYrk/s1600/canstockphoto1799922+teacher.jpg"
+              v-bind:src="'http://127.0.0.1:8000' + ment.image"
               alt="photo"
             />
           </div>
           <div class="text-center">
-            <p class="text-xl text-gray-300 font-bold mb-2">NAME</p>
-            <h3>(designation)</h3>
+            <p class="text-xl text-gray-300 font-bold mb-2">{{ ment.name }}</p>
+            <h3>{{ ment.description }}</h3>
 
             <p class="text-base text-black-400 font-normal">
               <span class="ph1"
@@ -39,7 +43,7 @@
                   referrerpolicy="no-referrer" />
                 <i class="fa-solid fa-square-phone"></i
               ></span>
-              CONTACT
+              {{ ment.email }}
             </p>
           </div>
         </div>
@@ -54,19 +58,19 @@ export default {
   name: "Mentors",
   data() {
     return {
-      latestNotices: [],
+      latestMentors: [],
     };
   },
   components: {},
   mounted() {
-    this.getLatestNotices();
+    this.getLatestMentors();
   },
   methods: {
-    getLatestNotices() {
+    getLatestMentors() {
       axios
-        .get("/api/v1/notices-latest/")
+        .get("/api/v1/mentor/")
         .then((response) => {
-          this.latestNotices = response.data;
+          this.latestMentors = response.data;
         })
         .catch((error) => {
           console.log(error);
