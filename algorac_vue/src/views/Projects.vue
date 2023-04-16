@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container mx-auto py-4 p-5 space-y-5 sm:py-8 md:py-12 sm:space-y-8 md:space-y-16 page"
+    class="container mx-auto py-4 p-5 space-y-5 sm:py-8 md:py-12 sm:space-y-8 md:space-y-16"
   >
     <div class="flex flex-col items-center md:flex-row">
       <div class="items-start justify-center w-full h-full md:w-1/2">
@@ -42,13 +42,13 @@
         <p class="text-sm">
           {{ prj.description }}
         </p>
-        <div class="pt-2 pr-0 pb-0 pl-0">
+        <div class="pt-2">
           <p class="text-sm font-medium inline">By:</p>
-          <a class="inline text-xs font-medium mt-0 mr-1 mb-0 ml-0 underline">{{
+          <a class="inline text-xs font-medium mr-1 underline">{{
             prj.creator
           }}</a>
-          <p class="inline text-xs font-medium mt-0 mr-1 mb-0 ml-1">
-            · {{ prj.time_added }} ·
+          <p class="inline text-xs font-medium mx-1">
+            · {{ prj.date_added }} ·
           </p>
         </div>
       </div>

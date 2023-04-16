@@ -8,16 +8,16 @@ import Mentors from "../views/Mentors.vue"
 const routes = [
   {
     path: "/",
-    name: "home",
+
     component: HomeView,
     meta: {
-      enterClass: "animate__animated animate__slideInRight animate__fast",
-      leaveClass: "animate__animated animate__slideOutLeft animate__fast",
+      enterClass: "animate__animated animate__slideInRight animate__faster",
+      leaveClass: "animate__animated animate__slideOutLeft animate__faster",
     }
   },
   {
     path: "/projects",
-    name: "projects",
+
     component: Projects,
     meta: {
       enterClass: "animate__animated animate__slideInRight animate__faster",
@@ -27,9 +27,8 @@ const routes = [
 
   {
     path: "/mentors",
-    name: "Mentors",
-    component: () =>
-      import("../views/Mentors.vue"),
+
+    component: Mentors,
     meta: {
       enterClass: "animate__animated animate__slideInRight animate__faster",
       leaveClass: "animate__animated animate__slideOutLeft animate__faster",
