@@ -31,23 +31,7 @@
           alt="image slider"
         />
       </swiper-slide>
-      <swiper-slide>
-        <p class="absolute bottom-20">sdffsffdfsdfsdfsdfsdfsfsd</p>
-        <img
-          class="object-cover w-full holo rounded-3xl"
-          src="../assets/prj_1.svg"
-          alt="image slide 1"
-        />
-      </swiper-slide>
-
-      <swiper-slide>
-        <p class="absolute bottom-20">sdffsffdfsdfsdfsdfsdfsfsd</p>
-        <img
-          class="object-cover w-full holo rounded-3xl"
-          src="../assets/prj_2.svg"
-          alt="image slide 2"
-        />
-      </swiper-slide>
+     
     </swiper>
   </div>
 </template>

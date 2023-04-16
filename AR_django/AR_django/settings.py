@@ -27,7 +27,14 @@ SECRET_KEY = 'django-insecure-$0n&v7#)iy*#@_)#2__37^@^4aku0m8&97p7*me0*v4(sa0&e0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['127.0.0.1',
+                 'localhost',
+                 'algorac-production.up.railway.app',
+                 'https://algorac-production.up.railway.app',
+                 'https://www.algorac-production.up.railway.app']
+
+CSRF_TRUSTED_ORIGINS = ['https://algorac-production.up.railway.app',
+                        'https://www.algorac-production.up.railway.app']
 
 
 # Application definition
