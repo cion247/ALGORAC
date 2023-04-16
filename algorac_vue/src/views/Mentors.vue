@@ -44,169 +44,35 @@
           </div>
         </div>
       </div>
-      <div class="m-12 mx-auto w-full">
-        <div
-          class="w-full card mx-auto overflow-hidden bg-white bg-opacity-10 backdrop-blur rounded-lg p-12 flex max-w-md flex-col justify-center items-center"
-        >
-          <div class="mb-4">
-            <img
-              class="object-center object-cover rounded-full h-36 w-36"
-              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-              alt="photo"
-            />
-          </div>
-          <div class="text-center">
-            <p class="text-xl text-gray-300 font-bold mb-2">NAME</p>
-            <h3>(designation)</h3>
-
-            <p class="text-base text-black-400 font-normal">
-              <span class="ph1"
-                ><a
-                  link
-                  rel="stylesheet"
-                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-                  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-                  crossorigin="anonymous"
-                  referrerpolicy="no-referrer" />
-                <i class="fa-solid fa-square-phone"></i
-              ></span>
-              CONTACT
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="m-12 mx-auto w-full">
-        <div
-          class="w-full card mx-auto overflow-hidden bg-white bg-opacity-10 backdrop-blur rounded-lg p-12 flex max-w-md flex-col justify-center items-center"
-        >
-          <div class="mb-4">
-            <img
-              class="object-center object-cover rounded-full h-36 w-36"
-              src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80"
-              alt="photo"
-            />
-          </div>
-          <div class="text-center">
-            <p class="text-xl text-gray-300 font-bold mb-2">NAME</p>
-            <h3>(designation)</h3>
-
-            <p class="text-base text-black-400 font-normal">
-              <span class="ph1"
-                ><a
-                  link
-                  rel="stylesheet"
-                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-                  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-                  crossorigin="anonymous"
-                  referrerpolicy="no-referrer" />
-                <i class="fa-solid fa-square-phone"></i
-              ></span>
-              CONTACT
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="m-12 mx-auto w-full">
-        <div
-          class="w-full card mx-auto overflow-hidden bg-white bg-opacity-10 backdrop-blur rounded-lg p-12 flex max-w-md flex-col justify-center items-center"
-        >
-          <div class="mb-4">
-            <img
-              class="object-center object-cover rounded-full h-36 w-36"
-              src="http://2.bp.blogspot.com/_lwBPBFdTaWM/TIeBFJY4EVI/AAAAAAAAAA8/hta0nczcYrk/s1600/canstockphoto1799922+teacher.jpg"
-              alt="photo"
-            />
-          </div>
-          <div class="text-center">
-            <p class="text-xl text-gray-300 font-bold mb-2">NAME</p>
-            <h3>(designation)</h3>
-
-            <p class="text-base text-black-400 font-normal">
-              <span class="ph1"
-                ><link
-                  rel="stylesheet"
-                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-                  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-                  crossorigin="anonymous"
-                  referrerpolicy="no-referrer" />
-                <i class="fa-solid fa-square-phone"></i
-              ></span>
-              CONTACT
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="m-12 mx-auto w-full">
-        <div
-          class="w-full card mx-auto overflow-hidden bg-white bg-opacity-10 backdrop-blur rounded-lg p-12 flex max-w-md flex-col justify-center items-center"
-        >
-          <div class="mb-4">
-            <img
-              class="object-center object-cover rounded-full h-36 w-36"
-              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-              alt="photo"
-            />
-          </div>
-          <div class="text-center">
-            <p class="text-xl text-gray-300 font-bold mb-2">NAME</p>
-            <h3>(designation)</h3>
-
-            <p class="text-base text-black-400 font-normal">
-              <span class="ph1"
-                ><a
-                  link
-                  rel="stylesheet"
-                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-                  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-                  crossorigin="anonymous"
-                  referrerpolicy="no-referrer" />
-                <i class="fa-solid fa-square-phone"></i
-              ></span>
-              CONTACT
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="m-12 mx-auto w-full">
-        <div
-          class="w-full card mx-auto overflow-hidden bg-white bg-opacity-10 backdrop-blur rounded-lg p-12 flex max-w-md flex-col justify-center items-center"
-        >
-          <div class="mb-4">
-            <img
-              class="object-center object-cover rounded-full h-36 w-36"
-              src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80"
-              alt="photo"
-            />
-          </div>
-          <div class="text-center">
-            <p class="text-xl text-gray-300 font-bold mb-2">NAME</p>
-            <h3>(designation)</h3>
-
-            <p class="text-base text-black-400 font-normal">
-              <span class="ph1"
-                ><a
-                  link
-                  rel="stylesheet"
-                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-                  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-                  crossorigin="anonymous"
-                  referrerpolicy="no-referrer" />
-                <i class="fa-solid fa-square-phone"></i
-              ></span>
-              CONTACT
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 </template>
 
 <script>
+import axios from "axios";
 export default {
   name: "Mentors",
-  data() {},
+  data() {
+    return {
+      latestNotices: [],
+    };
+  },
   components: {},
+  mounted() {
+    this.getLatestNotices();
+  },
+  methods: {
+    getLatestNotices() {
+      axios
+        .get("/api/v1/notices-latest/")
+        .then((response) => {
+          this.latestNotices = response.data;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+  },
 };
 </script>
 <style>
