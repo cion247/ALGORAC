@@ -8,7 +8,7 @@
       :centeredSlides="true"
       slides-per-view="1"
       :autoplay="{
-        delay: 2000,
+        delay: 3000,
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
       }"
@@ -23,7 +23,7 @@
       <swiper-slide v-for="images in this.latestGallery" v-bind:key="images.id">
         <p class="absolute bottom-20">{{ images.topic }}</p>
         <p class="absolute bottom-10">
-          http://127.0.0.1:8000{{ images.image }}
+          {{ images.description }}
         </p>
         <img
           class="object-cover w-full holo rounded-3xl"
@@ -31,7 +31,6 @@
           alt="image slider"
         />
       </swiper-slide>
-     
     </swiper>
   </div>
 </template>
@@ -85,7 +84,7 @@ export default {
 }
 @media (min-width: 1024px) {
   .holo {
-    height: 35rem;
+    height: 45rem;
   }
 }
 </style> 
