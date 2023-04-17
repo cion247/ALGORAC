@@ -16,13 +16,14 @@
         © 2023 ALGORAC :<br />ICFAI Tripura University Kamalghat, Mohanpur -
         799210 <br />Ph-0381-286575
         <a
-          href="https://github.com/cion247/"
+          href=""
           class="text-gray-900 ml-1"
           rel="noopener noreferrer"
           target="_blank"
         >
-          @cion247</a
+          give feedback</a
         >
+        
       </p>
       <span
         class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
