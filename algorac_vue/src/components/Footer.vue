@@ -9,6 +9,8 @@
         <img src="../assets/logo_20.svg" alt="footer logo" />
 
         <span class="ml-3 text-xl">ALGORAC</span>
+       
+        
       </a>
       <p
         class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
@@ -27,9 +29,12 @@
       </p>
       <span
         class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
-      >
-        <a
-          class="ml-3 text-gray-500"
+      > 
+        <a class="ml-3 text-black-500"
+         href="/feedback">
+           Feedback
+        </a>
+        <a class="ml-3 text-gray-500"
           href="https://github.com/cion247/algorac"
           target="blank"
         >
