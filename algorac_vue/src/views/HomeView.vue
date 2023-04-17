@@ -4,11 +4,6 @@
       <div
         class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
       >
-        <img
-          class="h-52 py-4 mx-auto md:h-64 lg:h-72 lg:mx-0"
-          src="../assets/ICFAIlogo.png"
-          alt="icfai_logo"
-        />
         <h1
           class="title-font sm:text-4xl text-8xl mb-4 font-medium text-red-50"
         >
