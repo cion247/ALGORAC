@@ -6,7 +6,8 @@
       class="flex flex-wrap px-5 py-4 flex-row items-center justify-items-center w-32"
     >
       <a href="/" class="flex title-font items-center text-white mb-4 mx-auto">
-        <span class="text-4xl font-black">ALGORAC</span>
+        <img src="../assets/med.svg" alt="ALGORAC Logo" class="w-12 h-12" />
+        <span class="text-4xl pl-4">ALGORAC</span>
       </a>
     </div>
     <div
@@ -17,20 +18,20 @@
       >
         <router-link
           to="/"
-          class="mr-3 py-1 text-xl font-bold border-black hover:border-b-2"
+          class="mr-3 py-1 text-xl font-semibold border-black hover:border-b-2"
           >Home</router-link
         >
         <router-link
           to="/projects"
-          class="mr-3 py-1 text-xl font-bold border-black hover:border-b-2"
+          class="mr-3 py-1 text-xl font-semibold border-black hover:border-b-2"
           >projects</router-link
         ><router-link
           to="/mentors"
-          class="mr-3 py-1 text-xl font-bold border-black hover:border-b-2"
+          class="mr-3 py-1 text-xl font-semibold border-black hover:border-b-2"
           >mentors</router-link
         >
       </nav>
-      <button
+      <!-- <button
         class="inline-flex items-center my-2 bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-black md:mt-0"
       >
         <a href="/login">Login</a>
@@ -45,7 +46,7 @@
         >
           <path d="M5 12h14M12 5l7 7-7 7"></path>
         </svg>
-      </button>
+      </button> -->
     </div>
   </header>
 </template>

@@ -8,11 +8,12 @@
           class="flex flex-col items-start justify-center h-full space-y-3 transform md:pr-10 lg:pr-16 md:space-y-5"
         >
           <div
-            class="bg-cyan-700 flex items-center leading-none rounded-full pt-1.5 pr-3 pb-1.5 pl-2 uppercase"
+            class="bg-slate-100 flex items-center text-black leading-none rounded-full pt-1.5 pr-3 pb-1.5 pl-2 uppercase"
           >
             <p class="inline text-xs font-medium px-2">Projects</p>
           </div>
-          <a class="text-4x1 font-bold leading-none lg:text-5xl xl:text-6xl"
+          <a
+            class="text-2xl font-bold leading-none lg:text-4xl text-center py-10 mx-auto"
             >Projects handled under ALGORAC.</a
           >
         </div>
@@ -34,15 +35,18 @@
           v-bind:src="'http://127.0.0.1:8000' + prj.image"
         />
         <p
-          class="bg-cyan-700 flex items-center leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase"
+          class="bg-slate-50 flex items-center text-black leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase"
         >
           {{ prj.id }}
         </p>
-        <a class="text-lg font-bold sm:text-xl md:text-2xl">{{ prj.title }}</a>
-        <p class="text-sm">
+        <a class="text-xl font-medium md:text-4xl">{{ prj.title }}</a>
+        <p
+          class="text-base font-normal md:text-xl md:font-semibold drop-shadow-md"
+        >
           {{ prj.description }}
         </p>
-        <div class="pt-2">
+
+        <div class="pt-2 text-black">
           <p class="text-sm font-medium inline">By:</p>
           <a class="inline text-xs font-medium mr-1 underline">{{
             prj.creator

@@ -1,10 +1,12 @@
 <template>
-  <div class="font-mono w-full h-full bg-one bg-fixed bg-cover bg-bottom">
+  <div
+    class="text-xl font-semibold w-full h-full bg-one bg-fixed bg-cover bg-bottom p-2"
+  >
     <div class="container mx-auto text-left text-white">
       <div class="flex items-center">
         <div class="w-1/2">
-          <h1 class="text-5xl mb-6">ABOUT US</h1>
-          <p class="text-xl mb-12">
+          <h1 class="sm:text-4xl text-4xl font-medium mb-6">ABOUT US</h1>
+          <p class="mb-12">
             ALGORAC Coding Club is an ingrain part of ICFAI University
             Tripura(IUT), a private university located at Agartala, Tripura,
             India.
@@ -30,9 +32,9 @@
             class="shadow-2xl border-1 mx-auto my-20 border border-transparent rounded backdrop-blur-lg"
           >
             <div class="p-5 space-y-5 shadow-xl">
-              <h4 class="font-serif text-center text-3xl">contact us</h4>
+              <h4 class="text-center sm:text-2xl text-2xl">contact us</h4>
 
-              <form @submit.prevent="submits">
+              <form @submit.prevent="submits" class="text-xl font-semibold">
                 <div class="grid grid-cols-2 gap-2">
                   <label class="px-3">name</label>
                   <input
@@ -73,7 +75,7 @@
 </template>
       
 <script>
-import axios from 'axios';
+import axios from "axios";
 
 export default {
   name: "AboutUs",
@@ -91,11 +93,14 @@ export default {
       const messageData = {
         name: this.name,
         email: this.email,
-        description: this.message
+        description: this.message,
       };
 
       try {
-        const response = await axios.post('http://127.0.0.1:8000/api/v1/messages/', messageData);
+        const response = await axios.post(
+          "http://127.0.0.1:8000/api/v1/messages/",
+          messageData
+        );
         console.log(response);
         this.email = "";
         this.name = "";

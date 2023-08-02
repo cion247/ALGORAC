@@ -1,6 +1,6 @@
 <template>
   <div
-    class="font-mono w-full h-full bg-one bg-fixed bg-cover bg-bottom text-white"
+    class="font-sans w-full h-full bg-one bg-fixed bg-cover bg-bottom text-white"
   >
     <NavBar />
     <router-view v-slot="{ Component, route }">
