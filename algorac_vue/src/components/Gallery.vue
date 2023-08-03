@@ -23,11 +23,11 @@
       <swiper-slide v-for="images in this.latestGallery" v-bind:key="images.id">
         <p class="absolute bottom-20">{{ images.topic }}</p>
         <p class="absolute bottom-10">
-          http://127.0.0.1:8000{{ images.image }}
+          https://algoracbackend.onrender.com{{ images.image }}
         </p>
         <img
           class="object-cover w-full holo rounded-3xl"
-          v-bind:src="'http://127.0.0.1:8000' + images.image"
+          v-bind:src="'https://algoracbackend.onrender.com' + images.image"
           alt="image slider"
         />
       </swiper-slide>

@@ -32,7 +32,7 @@
       >
         <img
           class="rounded-xl"
-          v-bind:src="'http://127.0.0.1:8000' + prj.image"
+          v-bind:src="'https://algoracbackend.onrender.com' + prj.image"
         />
         <p
           class="bg-slate-50 flex items-center text-black leading-none text-sm font-medium pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase"

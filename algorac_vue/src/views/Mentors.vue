@@ -28,7 +28,7 @@
           <div class="mb-4">
             <img
               class="object-center object-cover rounded-full h-36 w-36"
-              v-bind:src="'http://127.0.0.1:8000' + ment.image"
+              v-bind:src="'https://algoracbackend.onrender.com' + ment.image"
               alt="photo"
             />
           </div>
