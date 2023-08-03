@@ -11,16 +11,14 @@
             Tripura(IUT), a private university located at Agartala, Tripura,
             India.
             <br />
-            ALGORAC is the perfect platform for all techies who are inquisitive
-            and diligent about tackling real life problem with the aid of
-            programming. The club focuses on Competitive program ming, Web Dev,
-            App Dev, and various other aspects of programming.
-            <br />
-            ALGORAC strives to inculcate and foster the culture of program ming
-            and to create a healthy programming environment in the campus. It
-            aims to create an environment which proliferate quantity and quality
-            of programmers irrespective of their respective engineering
-            discipline.
+            ALGORAC is a dynamic and passionate community of tech enthusiasts, driven by a shared love 
+            for coding and technology. It provides an inclusive space for students of all skill levels to
+            explore, learn, and collaborate on coding projects.
+            <br/>
+            Through workshops, hackathons, and engaging activities, ALGORAC aims to foster a supportive environment 
+            that nurtures creativity and innovation. As it embraces the ever-evolving world of programming, 
+            the coding club strives to equip members with valuable skills, preparing them for exciting careers in the tech industry.
+            Let's learn, network, and shape the future of technology together!          
           </p>
           <a
             class="bg-white bg-opacity-10 py-4 px-12 rounded-full hover:bg-white-600 backdrop-blur-lg"
