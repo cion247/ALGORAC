@@ -13,7 +13,7 @@
       <p
         class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
       >
-        © 2023 ALGORAC :<br />ICFAI Tripura University Kamalghat, Mohanpur -
+        © 2023 ALGORAC :<br />ICFAI University Tripura, Kamalghat, Mohanpur -
         799210 <br />Ph-0381-286575
         <a
           href=""
@@ -27,7 +27,6 @@
       <span
         class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
       >
-        <a class="ml-3 text-black-500" href="/feedback"> Feedback </a>
         <a
           class="ml-3 text-gray-500"
           href="https://github.com/cion247/algorac"
