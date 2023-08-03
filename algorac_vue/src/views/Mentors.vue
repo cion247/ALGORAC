@@ -7,7 +7,11 @@
           <strong class=""> ALGORAC </strong>
         </h1>
       </div>
-      <img src="../assets/head.png" class="w-full" />
+      <p class="mb-8 text-xl font-semibold">
+        mentors are available for any help or guidance a student may require
+        <br />
+        strudents can reach out to mentors without prior introduction
+      </p>
     </div>
 
     <div
@@ -84,10 +88,10 @@ export default {
   box-shadow: 5px 5px 20px gray;
   transition: 0.9s;
 }
-.card:hover {
+/* .card:hover {
   cursor: pointer;
   transform: scale(1.1);
-}
+} */
 .ph1 {
   color: gray;
 }
